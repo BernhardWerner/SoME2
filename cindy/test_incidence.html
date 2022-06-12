@@ -6,7 +6,6 @@
     <title>Egdod test</title>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/Cindy.js"></script>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/CindyGL.js"></script>
-    <script type="text/javascript" src="cindyLoader.js"></script>
 
   </head>
 
@@ -21,31 +20,31 @@ drawOutline(t) := (
 );
 
 drawVanishingLines(t) := (
-  draw(d, lerp(d, lerp(d, x, 1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
-  draw(c, lerp(c, lerp(c, x, 1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
-  draw(b, lerp(b, lerp(b, y, 1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
-  draw(c, lerp(c, lerp(c, y, 1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(d, lerp(d, lerp(d, x, 1.1), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(c, lerp(c, lerp(c, x, 1.1), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(b, lerp(b, lerp(b, y, 1.1), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(c, lerp(c, lerp(c, y, 1.1), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightBlue);
 );
 
 drawDiagonals(t) := (
-  draw(lerp(a,c,-0.1), lerp(lerp(a,c,-0.1), lerp(a,c,1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
-  draw(lerp(b,d,-0.1), lerp(lerp(b,d,-0.1), lerp(b,d,1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(lerp(a,c,-0.1), lerp(lerp(a,c,-0.1), lerp(a,c,1.1), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(lerp(b,d,-0.1), lerp(lerp(b,d,-0.1), lerp(b,d,1.1), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightBlue);
 );
 
 drawMiddle(t) := (
-  draw(lerp(x,q,-0.1), lerp(lerp(x,q,-0.1), lerp(x,q,1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(lerp(x,q,-0.1), lerp(lerp(x,q,-0.1), lerp(x,q,1.1), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightBlue);
 );
 
 drawSlants(t) := (
-  draw(lerp(p,a,-0.05), lerp(lerp(p,a,-0.05), lerp(p,a,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightRed);
-  draw(lerp(c,q,-0.05), lerp(lerp(c,q,-0.05), lerp(c,q,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightRed);
+  draw(lerp(p,a,-0.05), lerp(lerp(p,a,-0.05), lerp(p,a,1.05), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightRed);
+  draw(lerp(c,q,-0.05), lerp(lerp(c,q,-0.05), lerp(c,q,1.05), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightRed);
 );
 
 drawOuterThirds(t) := (
-  draw(lerp(x,h5,-0.05), lerp(lerp(x,h5,-0.05), lerp(x,h5,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightGreen);
-  draw(lerp(x,h7,-0.05), lerp(lerp(x,h7,-0.05), lerp(x,h7,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightGreen);
-  draw(lerp(y,h1,-0.05), lerp(lerp(y,h1,-0.05), lerp(y,h1,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightGreen);
-  draw(lerp(y,h3,-0.05), lerp(lerp(y,h3,-0.05), lerp(y,h3,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightGreen);
+  draw(lerp(x,h5,-0.05), lerp(lerp(x,h5,-0.05), lerp(x,h5,1.05), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightGreen);
+  draw(lerp(x,h7,-0.05), lerp(lerp(x,h7,-0.05), lerp(x,h7,1.05), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightGreen);
+  draw(lerp(y,h1,-0.05), lerp(lerp(y,h1,-0.05), lerp(y,h1,1.05), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightGreen);
+  draw(lerp(y,h3,-0.05), lerp(lerp(y,h3,-0.05), lerp(y,h3,1.05), easeInOutCubic(t)), size -> auxThickness * easeOutCirc(t), color -> sapColor.lightGreen);
 );
 
 drawInnerThirds(t) := (
@@ -56,11 +55,45 @@ drawInnerThirds(t) := (
 
 );
 
+drawMiddleMarkers(t) := (
+  regional(ts, te, pMarker, qMarker, start, end);
+    
+  ts = clamp(2.1 * t - 1.1, 0, 1);
+  te = clamp(2.1 * t, 0, 1); 
 
+  start = max(1, round(ts * length(markerCircle)));
+  end = max(start, round(te * length(markerCircle)));
+
+  pMarker = apply(markerCircle_(start..end), # + p);
+  qMarker = apply(markerCircle_(start..end), # + q);
+
+  connect(pMarker, color -> sapColor.lightRed, size -> 7);
+  connect(qMarker, color -> sapColor.lightRed, size -> 7);
+);
+
+drawCenterMarkers(t) := (
+  regional(ts, te, rMarker, sMarker, start, end);
+    
+  ts = clamp(2.1 * t - 1.1, 0, 1);
+  te = clamp(2.1 * t, 0, 1); 
+
+  start = max(1, round(ts * length(markerCircle)));
+  end = max(start, round(te * length(markerCircle)));
+
+  rMarker = apply(markerCircle_(start..end), # + r);
+  sMarker = apply(markerCircle_(start..end), # + s);
+
+  connect(rMarker, color -> sapColor.lightGreen, size -> 7);
+  connect(sMarker, color -> sapColor.lightGreen, size -> 7);
+
+);
 
 // *****************************************************************************
 
 strokeSampleRateEBOW = 128;
+
+auxThickness = 2;
+
 
 
 a = canvasCenter + [-22, -17];
@@ -76,6 +109,8 @@ m = meet(join(a,c), join(b,d)).xy;
 p = meet(join(x,m), join(c,d)).xy;
 q = meet(join(x,m), join(a,b)).xy;
 
+markerCircle = sampleCircle(1, 2*pi);
+
 r = meet(join(a,p), join(b,d)).xy;
 s = meet(join(c,q), join(b,d)).xy;
 
@@ -90,15 +125,12 @@ h8 = meet(join(s,x), join(c,d)).xy;
 
 outline = samplePolygon([a,b,c,d]);
 
-tracks = [
-  setupAnimationTrack(0, 1),
-  setupAnimationTrack(2, 3),
-  setupAnimationTrack(4, 5),
-  setupAnimationTrack(6, 7),
-  setupAnimationTrack(8, 9),
-  setupAnimationTrack(10, 11),
-  setupAnimationTrack(12, 13)
-];
+trackDuration = 1;
+trackPause = 1;
+numberOfTracks = 9;
+tracks = apply(1..numberOfTracks,
+  setupAnimationTrack((#-1) * (trackPause + trackDuration), (#-1) * (trackPause + trackDuration) + trackDuration);
+);
 
 setupTime();
 playanimation();
@@ -114,14 +146,17 @@ fillRect(canvasRect, sapColor.background, 1);
 drawVanishingLines(tracks_2.progress);
 drawDiagonals(tracks_3.progress);
 drawMiddle(tracks_4.progress);
-drawSlants(tracks_5.progress);
-drawOuterThirds(tracks_6.progress);
-fillRect(canvasRect, sapColor.background, tracks_7.progress);
-drawInnerThirds(tracks_7.progress);
+drawSlants(tracks_6.progress);
+drawOuterThirds(tracks_8.progress);
+fillRect(canvasRect, sapColor.background, tracks_9.progress);
+drawInnerThirds(tracks_9.progress);
 
 
 
 drawOutline(tracks_1.progress);
+
+drawMiddleMarkers(tracks_5.progress);
+drawCenterMarkers(tracks_7.progress);
 
 //drawall([a,c,x,y,b,d,m,p,q,r,s,h1,h2,h3,h4,h5,h6,h7,h8]);
 </script>

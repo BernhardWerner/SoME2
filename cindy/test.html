@@ -6,7 +6,6 @@
     <title>Egdod test</title>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/Cindy.js"></script>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/CindyGL.js"></script>
-    <script type="text/javascript" src="cindyLoader.js"></script>
 
   </head>
 
@@ -17,30 +16,44 @@
 <script id='csinit' type='text/x-cindyscript'>
 
 
+  drawMiddleMarker(t) := (
+    regional(ts, te, marker, s, e);
+    
+    ts = clamp(2 * t - 1, 0, 1);
+    te = clamp(2 * t, 0, 1); 
+  
+    s = max(1, round(ts * length(markerCircle)));
+    e = clamp(round(te * length(markerCircle)), s, length(markerCircle));
+  
+    marker = apply(markerCircle_(s..e), 4 * # + canvasCenter);
+    connect(marker, color -> sapColor.lightRed, size -> 5);
+  );
 
-// *****************************************************************************
+  // *************************************************************************
 
-a = canvasCenter + [-8, -5];
-c = canvasCenter + [2, 2];
+  track = setupAnimationTrack(2, 5);
+  
 
-x = canvasCenter + [-1, 8];
-y = canvasCenter + [8, -2];
+  markerCircle = sampleCircle(1, 2*pi);
 
-
+  setupTime();
+  playanimation();
 </script>
 
 <script src="egdod.js"></script>
 
 
 <script id='csdraw' type='text/x-cindyscript'>
-fillRect(canvasRect, sapColor.background, 1);
-
-drawall([a,c,x,y]);
+  fillRect(canvasRect, sapColor.background, 1);
+  drawMiddleMarker(track.progress);
 </script>
 
 
 
 <script id='cstick' type='text/x-cindyscript'>
+  delta = deltaTime();
+
+  updateAnimationTrack(track, delta);
 </script>
 
 
