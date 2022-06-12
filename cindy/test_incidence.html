@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Egdod test</title>
+    <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/Cindy.js"></script>
+    <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/CindyGL.js"></script>
+    <script type="text/javascript" src="cindyLoader.js"></script>
+
+  </head>
+
+<body style="font-family:Palatino; margin:0; font-size:16pt">
+
+
+
+<script id='csinit' type='text/x-cindyscript'>
+
+drawOutline(t) := (
+  connect(outline_(1..round(easeInOutCubic(t) * length(outline))), size -> 7 * easeOutCirc(t), color -> sapColor.lightGrey)
+);
+
+drawVanishingLines(t) := (
+  draw(d, lerp(d, lerp(d, x, 1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(c, lerp(c, lerp(c, x, 1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(b, lerp(b, lerp(b, y, 1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(c, lerp(c, lerp(c, y, 1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+);
+
+drawDiagonals(t) := (
+  draw(lerp(a,c,-0.1), lerp(lerp(a,c,-0.1), lerp(a,c,1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+  draw(lerp(b,d,-0.1), lerp(lerp(b,d,-0.1), lerp(b,d,1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+);
+
+drawMiddle(t) := (
+  draw(lerp(x,q,-0.1), lerp(lerp(x,q,-0.1), lerp(x,q,1.1), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightBlue);
+);
+
+drawSlants(t) := (
+  draw(lerp(p,a,-0.05), lerp(lerp(p,a,-0.05), lerp(p,a,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightRed);
+  draw(lerp(c,q,-0.05), lerp(lerp(c,q,-0.05), lerp(c,q,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightRed);
+);
+
+drawOuterThirds(t) := (
+  draw(lerp(x,h5,-0.05), lerp(lerp(x,h5,-0.05), lerp(x,h5,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightGreen);
+  draw(lerp(x,h7,-0.05), lerp(lerp(x,h7,-0.05), lerp(x,h7,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightGreen);
+  draw(lerp(y,h1,-0.05), lerp(lerp(y,h1,-0.05), lerp(y,h1,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightGreen);
+  draw(lerp(y,h3,-0.05), lerp(lerp(y,h3,-0.05), lerp(y,h3,1.05), easeInOutCubic(t)), size -> 1 * easeOutCirc(t), color -> sapColor.lightGreen);
+);
+
+drawInnerThirds(t) := (
+  draw(h5, h6, size -> 5, color -> sapColor.lightGreen, alpha -> t);
+  draw(h7, h8, size -> 5, color -> sapColor.lightGreen, alpha -> t);
+  draw(h1, h2, size -> 5, color -> sapColor.lightGreen, alpha -> t);
+  draw(h3, h4, size -> 5, color -> sapColor.lightGreen, alpha -> t);
+
+);
+
+
+
+// *****************************************************************************
+
+strokeSampleRateEBOW = 128;
+
+
+a = canvasCenter + [-22, -17];
+c = canvasCenter + [2, -1];
+x = canvasCenter + [-2, 18];
+y = canvasCenter + [26, -11];
+
+b = meet(join(a,y), join(c,x)).xy;
+d = meet(join(a,x), join(c,y)).xy;
+
+m = meet(join(a,c), join(b,d)).xy;
+
+p = meet(join(x,m), join(c,d)).xy;
+q = meet(join(x,m), join(a,b)).xy;
+
+r = meet(join(a,p), join(b,d)).xy;
+s = meet(join(c,q), join(b,d)).xy;
+
+h1 = meet(join(r,y), join(a,d)).xy;
+h2 = meet(join(r,y), join(b,c)).xy;
+h3 = meet(join(s,y), join(a,d)).xy;
+h4 = meet(join(s,y), join(b,c)).xy;
+h5 = meet(join(r,x), join(a,b)).xy;
+h6 = meet(join(r,x), join(c,d)).xy;
+h7 = meet(join(s,x), join(a,b)).xy;
+h8 = meet(join(s,x), join(c,d)).xy;
+
+outline = samplePolygon([a,b,c,d]);
+
+tracks = [
+  setupAnimationTrack(0, 1),
+  setupAnimationTrack(2, 3),
+  setupAnimationTrack(4, 5),
+  setupAnimationTrack(6, 7),
+  setupAnimationTrack(8, 9),
+  setupAnimationTrack(10, 11),
+  setupAnimationTrack(12, 13)
+];
+
+setupTime();
+playanimation();
+</script>
+
+<script src="egdod.js"></script>
+
+
+<script id='csdraw' type='text/x-cindyscript'>
+fillRect(canvasRect, sapColor.background, 1);
+
+
+drawVanishingLines(tracks_2.progress);
+drawDiagonals(tracks_3.progress);
+drawMiddle(tracks_4.progress);
+drawSlants(tracks_5.progress);
+drawOuterThirds(tracks_6.progress);
+fillRect(canvasRect, sapColor.background, tracks_7.progress);
+drawInnerThirds(tracks_7.progress);
+
+
+
+drawOutline(tracks_1.progress);
+
+//drawall([a,c,x,y,b,d,m,p,q,r,s,h1,h2,h3,h4,h5,h6,h7,h8]);
+</script>
+
+
+
+<script id='cstick' type='text/x-cindyscript'>
+delta = deltaTime();
+
+forall(tracks,
+  updateAnimationTrack(#, delta);
+);
+
+
+</script>
+
+
+<script id='csmousemove' type='text/x-cindyscript'>
+
+
+</script>
+
+<script id='csmousedown' type='text/x-cindyscript'>
+</script>
+
+<script id='csmousedrag' type='text/x-cindyscript'>
+</script>
+
+<script id='csmouseup' type='text/x-cindyscript'>
+</script>
+
+<!-- <script id='cskeydown' type='text/x-cindyscript'>
+</script> -->
+
+
+<canvas id="CSCanvas" align="left" valign="top" width="1920" height="1080" style="border:0px solid #000000;"></canvas>
+
+
+
+
+
+
+<script>
+
+cindy = createCindy({canvasname:"CSCanvas",
+      scripts:"cs*",
+      images: {
+      },
+      use:["katex"]
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+  
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

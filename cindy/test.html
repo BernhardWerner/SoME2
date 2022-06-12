@@ -15,12 +15,27 @@
 
 
 <script id='csinit' type='text/x-cindyscript'>
+
+
+
+// *****************************************************************************
+
+a = canvasCenter + [-8, -5];
+c = canvasCenter + [2, 2];
+
+x = canvasCenter + [-1, 8];
+y = canvasCenter + [8, -2];
+
+
 </script>
+
 <script src="egdod.js"></script>
 
 
 <script id='csdraw' type='text/x-cindyscript'>
 fillRect(canvasRect, sapColor.background, 1);
+
+drawall([a,c,x,y]);
 </script>
 
 
@@ -47,7 +62,7 @@ fillRect(canvasRect, sapColor.background, 1);
 </script> -->
 
 
-<canvas id="CSCanvas" align="left" valign="top" width="800" height="800" style="border:1px solid #000000;"></canvas>
+<canvas id="CSCanvas" align="left" valign="top" width="1920" height="1080" style="border:0px solid #000000;"></canvas>
 
 
 

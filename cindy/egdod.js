@@ -141,8 +141,9 @@
 				if(track.looping,
 					track.timeLeft = track.end - track.start;
 				, // else //
-					//track.timeLeft = 0;
-					//track.running = false;		
+					track.timeLeft = 0;
+					track.progress = 1;
+					track.running = false;		
 				);
 			);
 		);
