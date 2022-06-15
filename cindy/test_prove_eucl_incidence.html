@@ -28,7 +28,7 @@ drawVanishingLines(t) := (
 
 drawDiagonals() := (
   draw(lerp(a,c,-0.1), lerp(a,c,1.1), size -> auxThickness, color -> sapColor.lightBlue);
-  draw(lerp(b,d,-0.1), lerp(b,d,1.1), size -> auxThickness, color -> sapColor.lightBlue);
+  draw(lerp(b,d,-0.1), lerp(b,d,1.1), size -> auxThickness * (1 + 3 * tracks_3.progress), color -> sapColor.lightBlue);
 );
 
 drawMiddle(t) := (
@@ -36,15 +36,15 @@ drawMiddle(t) := (
 );
 
 drawSlants() := (
-  draw(lerp(p,a,-0.05), lerp(p,a,1.05), size -> auxThickness, color -> sapColor.lightRed);
+  draw(lerp(p,a,-0.05), lerp(p,a,1.05), size -> auxThickness * (1 + 3 * tracks_3.progress), color -> sapColor.lightRed);
   draw(lerp(c,q,-0.05), lerp(c,q,1.05), size -> auxThickness, color -> sapColor.lightRed);
 );
 
 drawOuterThirds(t) := (
-  draw(lerp(h6, h5, 1.1), lerp(lerp(x, h6, easeInOutCubic(t)),h5,-0.1), size -> auxThickness, color -> sapColor.lightGreen);
-  draw(lerp(h8, h7, 1.1), lerp(lerp(x, h8, easeInOutCubic(t)),h7,-0.1), size -> auxThickness, color -> sapColor.lightGreen);
-  draw(lerp(h2, h1, 1.1), lerp(lerp(y, h2, easeInOutCubic(t)),h1,-0.1), size -> auxThickness, color -> sapColor.lightGreen);
-  draw(lerp(h4, h3, 1.1), lerp(lerp(y, h4, easeInOutCubic(t)),h3,-0.1), size -> auxThickness, color -> sapColor.lightGreen);
+  draw(lerp(h6, h5, 1.1), lerp(lerp(x, h6, easeInOutCubic(t)),h5,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - tracks_2.progress);
+  draw(lerp(h8, h7, 1.1), lerp(lerp(x, h8, easeInOutCubic(t)),h7,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - tracks_2.progress);
+  draw(lerp(h2, h1, 1.1), lerp(lerp(y, h2, easeInOutCubic(t)),h1,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - tracks_2.progress);
+  draw(lerp(h4, h3, 1.1), lerp(lerp(y, h4, easeInOutCubic(t)),h3,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - tracks_2.progress);
 );
 
 
@@ -62,13 +62,16 @@ markerCircle = sampleCircle(1, 2*pi);
 
 a = canvasCenter + [-22, -17];
 c = canvasCenter + [2, -1];
-x = canvasCenter + [-2, 18];
-y = canvasCenter + [26, -11];
 
-b = meet(join(a,y), join(c,x)).xy;
-d = meet(join(a,x), join(c,y)).xy;
+
+
+b = [33.0467, -2.0867];
+d = [18.38, 15.58];
 bStart = b;
 dStart = d;
+
+x = meet(join(a,d), join(b,c)).xy;
+y = meet(join(a,b), join(d,c)).xy;
 
 m = meet(join(a,c), join(b,d)).xy;
 
@@ -92,7 +95,7 @@ outline = samplePolygon([a,b,c,d]);
 
 trackDuration = 1;
 trackPause = 1;
-numberOfTracks = 2;
+numberOfTracks = 3;
 tracks = apply(1..numberOfTracks,
   setupAnimationTrack((#-1) * (trackPause + trackDuration), (#-1) * (trackPause + trackDuration) + trackDuration);
 );
@@ -114,6 +117,7 @@ drawMiddle(tracks_1.progress);
 drawSlants();
 drawOuterThirds(tracks_1.progress);
 
+
 drawOutline();
 
 
@@ -132,13 +136,16 @@ forall(tracks,
 
 a = lerp(canvasCenter + [-22, -17], canvasCenter + 0.4 * canvasHeight * [-1,-1], tracks_1.progress);
 c = lerp(canvasCenter + [2, -1], canvasCenter + 0.4 * canvasHeight *  [1,1], tracks_1.progress);
-x = lerp(canvasCenter + [-2, 18], canvasCenter + [0, 100], tracks_1.progress);
-y = lerp(canvasCenter + [26, -11], canvasCenter + [100, 0], tracks_1.progress);
+
+
 
 
 
 b = lerp(bStart, canvasCenter + 0.4 * canvasHeight *  [1,-1], tracks_1.progress);
 d = lerp(dStart, canvasCenter + 0.4 * canvasHeight *  [-1,1], tracks_1.progress);
+
+x = if(tracks_1.progress < 0.99, meet(join(a,d), join(b,c)).xy, canvasCenter + [0,1000]);
+y = if(tracks_1.progress < 0.99, meet(join(a,b), join(d,c)).xy, canvasCenter + [1000,0]);
 
 m = meet(join(a,c), join(b,d)).xy;
 
