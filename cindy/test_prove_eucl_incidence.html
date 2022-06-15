@@ -3,7 +3,7 @@
  <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Egdod test</title>
+    <title>test</title>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/Cindy.js"></script>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/CindyGL.js"></script>
 
@@ -26,25 +26,25 @@ drawVanishingLines(t) := (
   draw(c, lerp(y, c, easeInOutCubic(t)), size -> auxThickness, color -> sapColor.lightBlue);
 );
 
-drawDiagonals() := (
+drawDiagonals(t) := (
   draw(lerp(a,c,-0.1), lerp(a,c,1.1), size -> auxThickness, color -> sapColor.lightBlue);
-  draw(lerp(b,d,-0.1), lerp(b,d,1.1), size -> auxThickness * (1 + 3 * tracks_3.progress), color -> sapColor.lightBlue);
+  draw(lerp(b,d,-0.1), lerp(b,d,1.1), size -> auxThickness * (1 + 6 * t), color -> sapColor.lightBlue);
 );
 
 drawMiddle(t) := (
   draw(lerp(p, q, 1.1), lerp(lerp(x,p, easeInOutCubic(t)), q,-0.1), size -> auxThickness, color -> sapColor.lightBlue);
 );
 
-drawSlants() := (
-  draw(lerp(p,a,-0.05), lerp(p,a,1.05), size -> auxThickness * (1 + 3 * tracks_3.progress), color -> sapColor.lightRed);
+drawSlants(t) := (
+  draw(lerp(p,a,-0.05), lerp(p,a,1.05), size -> auxThickness * (1 + 6 * t), color -> sapColor.lightRed);
   draw(lerp(c,q,-0.05), lerp(c,q,1.05), size -> auxThickness, color -> sapColor.lightRed);
 );
 
-drawOuterThirds(t) := (
-  draw(lerp(h6, h5, 1.1), lerp(lerp(x, h6, easeInOutCubic(t)),h5,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - tracks_2.progress);
-  draw(lerp(h8, h7, 1.1), lerp(lerp(x, h8, easeInOutCubic(t)),h7,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - tracks_2.progress);
-  draw(lerp(h2, h1, 1.1), lerp(lerp(y, h2, easeInOutCubic(t)),h1,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - tracks_2.progress);
-  draw(lerp(h4, h3, 1.1), lerp(lerp(y, h4, easeInOutCubic(t)),h3,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - tracks_2.progress);
+drawOuterThirds(t, s) := (
+  draw(lerp(h6, h5, 1.1), lerp(lerp(x, h6, easeInOutCubic(t)),h5,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - s);
+  draw(lerp(h8, h7, 1.1), lerp(lerp(x, h8, easeInOutCubic(t)),h7,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - s);
+  draw(lerp(h2, h1, 1.1), lerp(lerp(y, h2, easeInOutCubic(t)),h1,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - s);
+  draw(lerp(h4, h3, 1.1), lerp(lerp(y, h4, easeInOutCubic(t)),h3,-0.1), size -> auxThickness, color -> sapColor.lightGreen, alpha -> 1 - s);
 );
 
 
@@ -93,11 +93,18 @@ h8 = meet(join(s,x), join(c,d)).xy;
 
 outline = samplePolygon([a,b,c,d]);
 
+
+texOrigin = parseTex("$@(€@0€@,€@0€@)€$");
+texOne = parseTex("$@(€@1€@,€@0€@)€$");
+texSlant = parseTex("$@y€@=€@2€@x€$");
+texDiag = parseTex("$@y€@=€@1€@-€@x€$");
+
+startWait = 1;
 trackDuration = 1;
 trackPause = 1;
-numberOfTracks = 3;
+numberOfTracks = 5;
 tracks = apply(1..numberOfTracks,
-  setupAnimationTrack((#-1) * (trackPause + trackDuration), (#-1) * (trackPause + trackDuration) + trackDuration);
+  setupAnimationTrack(startWait + (#-1) * (trackPause + trackDuration), startWait + (#-1) * (trackPause + trackDuration) + trackDuration);
 );
 
 setupTime();
@@ -112,14 +119,19 @@ fillRect(canvasRect, sapColor.background, 1);
 
 
 drawVanishingLines(tracks_1.progress);
-drawDiagonals();
+drawDiagonals(tracks_5.progress);
 drawMiddle(tracks_1.progress);
-drawSlants();
-drawOuterThirds(tracks_1.progress);
+drawSlants(tracks_4.progress);
+drawOuterThirds(tracks_1.progress, tracks_2.progress);
 
 
 drawOutline();
 
+
+drawtext(canvasCenter + 0.4 * canvasHeight * [-1,-1] + [-2, 0], texOrigin_(round(lerp(1, length(texOrigin), tracks_3.progress))), size -> 60, align -> "right", color -> sapColor.lightGrey);
+drawtext(canvasCenter + 0.4 * canvasHeight * [1,-1] + [2, 0], texOne_(round(lerp(1, length(texOne), tracks_3.progress))), size -> 60, align -> "left", color -> sapColor.lightGrey);
+drawtext(canvasCenter + [-15.5, 4], texSlant_(round(lerp(1, length(texSlant), tracks_4.progress))), size -> 60, align -> "left", color -> sapColor.lightRed);
+drawtext(canvasCenter + [-13, 14], texDiag_(round(lerp(1, length(texDiag), tracks_5.progress))), size -> 60, align -> "left", color -> sapColor.lightBlue);
 
 //drawall([a,c,x,y,b,d,m,p,q,r,s,h1,h2,h3,h4,h5,h6,h7,h8]);
 </script>
