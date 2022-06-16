@@ -99,13 +99,16 @@ texOne = parseTex("$@(€@1€@,€@0€@)€$");
 texSlant = parseTex("$@y€@=€@2€@x€$");
 texDiag = parseTex("$@y€@=€@1€@-€@x€$");
 
-startWait = 1;
+startWait = 3;
 trackDuration = 1;
 trackPause = 1;
 numberOfTracks = 5;
 tracks = apply(1..numberOfTracks,
   setupAnimationTrack(startWait + (#-1) * (trackPause + trackDuration), startWait + (#-1) * (trackPause + trackDuration) + trackDuration);
 );
+
+
+createimage("texBuffer", 1920, 1080);
 
 setupTime();
 playanimation();
@@ -130,8 +133,15 @@ drawOutline();
 
 drawtext(canvasCenter + 0.4 * canvasHeight * [-1,-1] + [-2, 0], texOrigin_(round(lerp(1, length(texOrigin), tracks_3.progress))), size -> 60, align -> "right", color -> sapColor.lightGrey);
 drawtext(canvasCenter + 0.4 * canvasHeight * [1,-1] + [2, 0], texOne_(round(lerp(1, length(texOne), tracks_3.progress))), size -> 60, align -> "left", color -> sapColor.lightGrey);
-drawtext(canvasCenter + [-15.5, 4], texSlant_(round(lerp(1, length(texSlant), tracks_4.progress))), size -> 60, align -> "left", color -> sapColor.lightRed);
-drawtext(canvasCenter + [-13, 14], texDiag_(round(lerp(1, length(texDiag), tracks_5.progress))), size -> 60, align -> "left", color -> sapColor.lightBlue);
+
+clearimage("texBuffer");
+canvas(canvasCorners.bl, canvasCorners.br, "texBuffer",
+  drawtext(canvasCenter + [-13, -1], texSlant_(round(lerp(1, length(texSlant), tracks_4.progress))), size -> 60, align -> "left", color -> sapColor.lightRed);
+  drawtext(canvasCenter + [-15, 11], texDiag_(round(lerp(1, length(texDiag), tracks_5.progress))), size -> 60, align -> "left", color -> sapColor.lightBlue);
+);
+drawOutline("texBuffer", 0.2, sapColor.background);
+drawtext(canvasCenter + [-13, -1], texSlant_(round(lerp(1, length(texSlant), tracks_4.progress))) + "$ $", size -> 60, align -> "left", color -> sapColor.lightRed);
+drawtext(canvasCenter + [-15, 11], texDiag_(round(lerp(1, length(texDiag), tracks_5.progress))) + "$ $", size -> 60, align -> "left", color -> sapColor.lightBlue);
 
 //drawall([a,c,x,y,b,d,m,p,q,r,s,h1,h2,h3,h4,h5,h6,h7,h8]);
 </script>

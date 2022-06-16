@@ -125,11 +125,12 @@ h8 = meet(join(s,x), join(c,d)).xy;
 
 outline = samplePolygon([a,b,c,d]);
 
+startWait = 1;
 trackDuration = 1;
 trackPause = 1;
 numberOfTracks = 9;
 tracks = apply(1..numberOfTracks,
-  setupAnimationTrack((#-1) * (trackPause + trackDuration), (#-1) * (trackPause + trackDuration) + trackDuration);
+  setupAnimationTrack(startWait + (#-1) * (trackPause + trackDuration), startWait + (#-1) * (trackPause + trackDuration) + trackDuration);
 );
 
 setupTime();
