@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>test</title>
+    <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/Cindy.js"></script>
+    <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/CindyGL.js"></script>
+    <script type="text/javascript" src="cindyLoader.js"></script>
+
+  </head>
+
+<body style="font-family:Palatino; margin:0; font-size:16pt">
+
+
+
+<script id='csinit' type='text/x-cindyscript'>
+
+
+rel2abs(p) := canvasCenter + 0.9 * (p);
+
+
+drawBorder(t, s) := (
+  connect(outline(t)_(1..round(easeInOutCubic(s) * strokeSampleRateEBOW)), size -> lineSizePrimary * easeOutCirc(s), color -> sapColor.lightGrey)
+);
+
+drawInnerLines(t, s, alpha) := (
+  forall(1..4,
+    line = innerLines(t)_#;
+    ownTime = clamp((s - lineWiggles_#_1) / (1 - lineWiggles_#_1 - lineWiggles_#_2), 0, 1);
+    draw([line_1, lerp(line_1, line_2, ownTime)], size -> lineSizeSecondary * easeOutCirc(ownTime), color -> sapColor.lightGrey, alpha -> alpha)
+  );
+);
+
+
+drawConfusedLines(t, alpha) := (
+  draw([lerp(rel2abs(ab33), rel2abs(ab50), sin(confusedSpeeds_1_1 * t)^2), lerp(rel2abs(dc33), rel2abs(dc50), sin(confusedSpeeds_1_2 * t)^2)], size -> lineSizeSecondary, alpha -> alpha, color -> sapColor.lightRed);
+  draw([lerp(rel2abs(ab67), rel2abs(ab50), sin(confusedSpeeds_2_1 * t)^2), lerp(rel2abs(dc67), rel2abs(dc50), sin(confusedSpeeds_2_2 * t)^2)], size -> lineSizeSecondary, alpha -> alpha, color -> sapColor.lightRed);
+  draw([lerp(rel2abs(ad33), rel2abs(ad50), sin(confusedSpeeds_3_1 * t)^2), lerp(rel2abs(bc33), rel2abs(bc50), sin(confusedSpeeds_3_2 * t)^2)], size -> lineSizeSecondary, alpha -> alpha, color -> sapColor.lightRed);
+  draw([lerp(rel2abs(ad67), rel2abs(ad50), sin(confusedSpeeds_4_1 * t)^2), lerp(rel2abs(bc67), rel2abs(bc50), sin(confusedSpeeds_4_2 * t)^2)], size -> lineSizeSecondary, alpha -> alpha, color -> sapColor.lightRed);
+);
+
+
+// *************************************************************************
+
+strokeSampleRateEBOW = 256;
+lineSampleRateEBOW = 256;
+
+
+
+startGridSize = 4.5;
+
+
+tracks = [
+  setupAnimationTrack(1,2), // draw grid
+  setupAnimationTrack(3,5), // draw game
+  setupAnimationTrack(6,7), // distort
+  setupAnimationTrack(8,9), // fade out interior
+  setupAnimationTrack(10, 13) // question mark 
+];
+
+
+outline(t) := samplePolygon([
+  rel2abs(lerp(startGridSize * startGrid_1_1, a, t)),
+  rel2abs(lerp(startGridSize * startGrid_7_1, b, t)),
+  rel2abs(lerp(startGridSize * startGrid_7_7, c, t)),
+  rel2abs(lerp(startGridSize * startGrid_1_7, d, t))
+], true);
+
+innerLines(t) := [
+  [rel2abs(lerp(startGridSize * startGrid_3_1, ab33, t)), rel2abs(lerp(startGridSize * startGrid_3_7, dc33, t))],
+  [rel2abs(lerp(startGridSize * startGrid_5_1, ab67, t)), rel2abs(lerp(startGridSize * startGrid_5_7, dc67, t))],
+  [rel2abs(lerp(startGridSize * startGrid_1_3, ad33, t)), rel2abs(lerp(startGridSize * startGrid_7_3, bc33, t))],
+  [rel2abs(lerp(startGridSize * startGrid_1_5, ad67, t)), rel2abs(lerp(startGridSize * startGrid_7_5, bc67, t))]
+];
+lineWiggles = 0.45 * [
+  [random(),random()],
+  [random(),random()],
+  [random(),random()],
+  [random(),random()]
+];
+
+confusedSpeeds = [
+  [lerp(0.2, 0.25, random()), lerp(1, 3, random())],
+  [lerp(0.2, 0.25, random()), lerp(1, 3, random())],
+  [lerp(0.2, 0.25, random()), lerp(1, 3, random())],
+  [lerp(0.2, 0.25, random()), lerp(1, 3, random())]
+];
+
+createimage("textBuffer", 1920, 1080);
+canvas(canvasCorners.bl, canvasCorners.br, "textBuffer",
+  drawtext(rel2abs(m) + 1.5 * [-1,-1] + [0, -0.015 * textSizePrimary], " " + "?" + " ", align -> "mid", size -> textSizePrimary);
+);
+
+
+setupTime();
+playanimation();
+</script>
+
+
+
+<script id='csdraw' type='text/x-cindyscript'>
+fillRect(canvasRect, sapColor.background, 1);
+
+
+drawInnerLines(tracks_3.progress, tracks_1.progress, 1 - tracks_4.progress);
+
+
+drawConfusedLines(now(), tracks_5.progress);
+
+
+drawOutline("textBuffer", textOutlineSizePrimary, sapColor.white);
+drawtext(rel2abs(m) + 1.5 * [-1,-1] + [0, -0.015 * textSizePrimary], "?", color -> sapColor.lightRed, align -> "mid", size -> textSizePrimary, alpha -> easeOutCirc(tracks_5.progress));
+
+
+drawBorder(tracks_3.progress, tracks_1.progress);
+
+
+
+
+//DEBUGGING
+drawtext(canvasCorners.tl + [1, -1.5], format(now(),2), size -> 25, color -> (1,1,1));
+</script>
+
+
+
+<script id='cstick' type='text/x-cindyscript'>
+delta = deltaTime();
+
+forall(tracks, updateAnimationTrack(#, delta));
+</script>
+
+
+<script id='csmousemove' type='text/x-cindyscript'>
+
+
+</script>
+
+<script id='csmousedown' type='text/x-cindyscript'>
+</script>
+
+<script id='csmousedrag' type='text/x-cindyscript'>
+</script>
+
+<script id='csmouseup' type='text/x-cindyscript'>
+</script>
+
+<!-- <script id='cskeydown' type='text/x-cindyscript'>
+</script> -->
+
+
+<canvas id="CSCanvas" align="left" valign="top" width="1920" height="1080" style="border:0px solid #000000;"></canvas>
+
+
+
+
+
+
+<script>
+
+fetch("egdod.cjs")
+  .then(response => response.text())
+  .then(data => {
+    loadCindyScript(data);
+    fetch("someBasics.cjs")
+    .then(response => response.text())
+    .then(data => {
+      loadCindyScript(data);
+      cindy = createCindy({canvasname:"CSCanvas",
+        scripts:"cs*",
+        images: {
+        },
+        use:["katex", "CindyGL"]
+      });
+    });
+  });
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+  
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -6,6 +6,7 @@
     <title>test</title>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/Cindy.js"></script>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/CindyGL.js"></script>
+    <script type="text/javascript" src="cindyLoader.js"></script>
 
   </head>
 
@@ -16,55 +17,41 @@
 <script id='csinit' type='text/x-cindyscript'>
 
 
-segment(p, q, overshoot) := [lerp(p,q,-overshoot), lerp(p,q, 1+overshoot)];
-
 rel2abs(p) := canvasCenter + 0.7 * (p - m);
 
-  // *************************************************************************
- 
+// *************************************************************************
 
-  setupTime();
-  playanimation();
+strokeSampleRateEBOW = 256;
+lineSampleRateEBOW = 256;
+
+
+
+
+
+
+
+
+
+
+setupTime();
+playanimation();
 </script>
 
-<script src="egdod.js"></script>
-<script src="someBasics.js"></script>
 
 
 <script id='csdraw' type='text/x-cindyscript'>
-  fillRect(canvasRect, sapColor.background, 1);
+fillRect(canvasRect, sapColor.background, 1);
 
-  draw(segment(rel2abs(ab33), rel2abs(vy), overshootPrimary), color -> sapColor.lightBlue, size -> lineSizePrimary);
-  draw(segment(rel2abs(ad50), rel2abs(vx), overshootPrimary), color -> sapColor.lightBlue, size -> lineSizeSecondary);
 
-  forall([a,b,c,d, m, vx, vy],
-    fillcircle(rel2abs(#), pointSizePrimary, color -> sapColor.lightRed);
-    drawcircle(rel2abs(#), pointSizePrimary, color -> sapColor.background, size -> lineSizeSecondary);
-  );
-  forall([ad33
-  ,ad50
-  ,ad67
-  ,bc33
-  ,bc50
-  ,bc67
-  ,ab33
-  ,ab50
-  ,ab67
-  ,dc33
-  ,dc50
-  ,dc67],
-    fillcircle(rel2abs(#), pointSizeSecondary, color -> sapColor.lightRed);
-    drawcircle(rel2abs(#), pointSizeSecondary, color -> sapColor.background, size -> lineSizeSecondary);
-  );
 
-  drawcircle(rel2abs(m), markerSizePrimary, color -> sapColor.lightGreen, size -> lineSizePrimary);
-
+//DEBUGGING
+drawtext(canvasCorners.tl + [1, -1.5], format(now(),2), size -> 25, color -> (1,1,1));
 </script>
 
 
 
 <script id='cstick' type='text/x-cindyscript'>
-  delta = deltaTime();
+delta = deltaTime();
 
 </script>
 
@@ -96,12 +83,26 @@ rel2abs(p) := canvasCenter + 0.7 * (p - m);
 
 <script>
 
-cindy = createCindy({canvasname:"CSCanvas",
-      scripts:"cs*",
-      images: {
-      },
-      use:["katex"]
+fetch("egdod.cjs")
+  .then(response => response.text())
+  .then(data => {
+    loadCindyScript(data);
+    fetch("someBasics.cjs")
+    .then(response => response.text())
+    .then(data => {
+      loadCindyScript(data);
+      cindy = createCindy({canvasname:"CSCanvas",
+        scripts:"cs*",
+        images: {
+        },
+        use:["katex", "CindyGL"]
+      });
     });
+  });
+
+
+
+
 
 </script>
 
