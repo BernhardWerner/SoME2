@@ -52,5 +52,5 @@ overshootPrimary = 0.1;
 textOutlineSizePrimary = 0.2;
 textOutlineSizeSecondary = 0.1;
 
-textSizePrimary = 100;
-textSizeSeconary = 30;
+textSizePrimary = 120;
+textSizeSeconary = 60;
