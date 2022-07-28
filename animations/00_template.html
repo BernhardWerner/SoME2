@@ -53,6 +53,11 @@ drawtext(canvasCorners.tl + [1, -1.5], format(now(),2), size -> 25, color -> (1,
 <script id='cstick' type='text/x-cindyscript'>
 delta = deltaTime();
 
+forall(tracks, updateAnimationTrack(#, delta));
+
+
+
+
 </script>
 
 

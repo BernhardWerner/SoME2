@@ -3,7 +3,7 @@
  <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>01 Introduction</title>
+    <title>01 Opening</title>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/Cindy.js"></script>
     <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/CindyGL.js"></script>
     <script type="text/javascript" src="cindyLoader.js"></script>
@@ -21,12 +21,12 @@ rel2abs(p) := canvasCenter + 0.9 * (p);
 
 
 drawBorder(t, s) := (
-  connect(outline(t)_(1..round(easeInOutCubic(s) * strokeSampleRateEBOW)), size -> lineSizePrimary * easeOutCirc(s), color -> sapColor.lightGrey);
+  connect(outline(easeInOutQuad(t))_(1..round(easeInOutCubic(s) * strokeSampleRateEBOW)), size -> lineSizePrimary * easeOutCirc(s), color -> sapColor.lightGrey);
 );
 
 drawInnerLines(t, s, alpha) := (
   forall(1..4,
-    line = innerLines(t)_#;
+    line = innerLines(easeInOutQuad(t))_#;
     ownTime = timeOffset(s, lineWiggles_#_1, 1 - lineWiggles_#_2);
     draw([line_1, lerp(line_1, line_2, ownTime)], size -> lineSizeSecondary * easeOutCirc(ownTime), color -> sapColor.lightGrey, alpha -> alpha);
   );
@@ -42,24 +42,24 @@ drawConfusedLines(t, alpha) := (
 
 
 drawTTTlines(t) := (
-  t1 = timeOffset(t, 0 / 9 * 0.9, 3 / 9 * 0.9);
-  t2 = timeOffset(t, 1 / 9 * 0.9, 4 / 9 * 0.9);
-  t3 = timeOffset(t, 2 / 9 * 0.9, 5 / 9 * 0.9);
-  t4 = timeOffset(t, 3 / 9 * 0.9, 6 / 9 * 0.9);
-  t5 = timeOffset(t, 4 / 9 * 0.9, 7 / 9 * 0.9);
-  t6 = timeOffset(t, 5 / 9 * 0.9, 8 / 9 * 0.9);
-  t7 = timeOffset(t, 6 / 9 * 0.9, 9 / 9 * 0.9);
+  t1 = timeOffset(t, 0 / 10 * 0.9, 4 / 10 * 0.9);
+  t2 = timeOffset(t, 1 / 10 * 0.9, 5 / 10 * 0.9);
+  t3 = timeOffset(t, 2 / 10 * 0.9, 6 / 10 * 0.9);
+  t4 = timeOffset(t, 3 / 10 * 0.9, 7 / 10 * 0.9);
+  t5 = timeOffset(t, 4 / 10 * 0.9, 8 / 10 * 0.9);
+  t6 = timeOffset(t, 5 / 10 * 0.9, 9 / 10 * 0.9);
+  t7 = timeOffset(t, 6 / 10 * 0.9, 10 / 10 * 0.9);
 
-  alpha = 1 - timeOffset(t, 0.9, 1);
+  alpha = 1 - timeOffset(t, 0.8, 1);
 
-  draw([tttCrosses_1_1, lerp(tttCrosses_1_1, tttCrosses_1_2, t1)], size -> lineSizePrimary * easeOutCirc(t1), color -> sapColor.lightRed, alpha -> alpha);
-  draw([tttCrosses_2_1, lerp(tttCrosses_2_1, tttCrosses_2_2, t1)], size -> lineSizePrimary * easeOutCirc(t1), color -> sapColor.lightRed, alpha -> alpha);
-  draw([tttCrosses_3_1, lerp(tttCrosses_3_1, tttCrosses_3_2, t3)], size -> lineSizePrimary * easeOutCirc(t3), color -> sapColor.lightRed, alpha -> alpha);
-  draw([tttCrosses_4_1, lerp(tttCrosses_4_1, tttCrosses_4_2, t3)], size -> lineSizePrimary * easeOutCirc(t3), color -> sapColor.lightRed, alpha -> alpha);
-  draw([tttCrosses_5_1, lerp(tttCrosses_5_1, tttCrosses_5_2, t5)], size -> lineSizePrimary * easeOutCirc(t5), color -> sapColor.lightRed, alpha -> alpha);
-  draw([tttCrosses_6_1, lerp(tttCrosses_6_1, tttCrosses_6_2, t5)], size -> lineSizePrimary * easeOutCirc(t5), color -> sapColor.lightRed, alpha -> alpha);
-  draw([tttCrosses_7_1, lerp(tttCrosses_7_1, tttCrosses_7_2, t7)], size -> lineSizePrimary * easeOutCirc(t7), color -> sapColor.lightRed, alpha -> alpha);
-  draw([tttCrosses_8_1, lerp(tttCrosses_8_1, tttCrosses_8_2, t7)], size -> lineSizePrimary * easeOutCirc(t7), color -> sapColor.lightRed, alpha -> alpha);
+  draw([tttCrosses_1_1, lerp(tttCrosses_1_1, tttCrosses_1_2, easeInOutCubic(t1))], size -> lineSizePrimary * easeInOutCirc(t1), color -> sapColor.lightRed, alpha -> alpha);
+  draw([tttCrosses_2_1, lerp(tttCrosses_2_1, tttCrosses_2_2, easeInOutCubic(t1))], size -> lineSizePrimary * easeInOutCirc(t1), color -> sapColor.lightRed, alpha -> alpha);
+  draw([tttCrosses_3_1, lerp(tttCrosses_3_1, tttCrosses_3_2, easeInOutCubic(t3))], size -> lineSizePrimary * easeInOutCirc(t3), color -> sapColor.lightRed, alpha -> alpha);
+  draw([tttCrosses_4_1, lerp(tttCrosses_4_1, tttCrosses_4_2, easeInOutCubic(t3))], size -> lineSizePrimary * easeInOutCirc(t3), color -> sapColor.lightRed, alpha -> alpha);
+  draw([tttCrosses_5_1, lerp(tttCrosses_5_1, tttCrosses_5_2, easeInOutCubic(t5))], size -> lineSizePrimary * easeInOutCirc(t5), color -> sapColor.lightRed, alpha -> alpha);
+  draw([tttCrosses_6_1, lerp(tttCrosses_6_1, tttCrosses_6_2, easeInOutCubic(t5))], size -> lineSizePrimary * easeInOutCirc(t5), color -> sapColor.lightRed, alpha -> alpha);
+  draw([tttCrosses_7_1, lerp(tttCrosses_7_1, tttCrosses_7_2, easeInOutCubic(t7))], size -> lineSizePrimary * easeInOutCirc(t7), color -> sapColor.lightRed, alpha -> alpha);
+  draw([tttCrosses_8_1, lerp(tttCrosses_8_1, tttCrosses_8_2, easeInOutCubic(t7))], size -> lineSizePrimary * easeInOutCirc(t7), color -> sapColor.lightRed, alpha -> alpha);
 
   connect(tttCircles_1_(1..round(easeInOutCubic(t2) * strokeSampleRateEBOW)), size -> lineSizePrimary * easeOutCirc(t2), color -> sapColor.lightBlue, alpha -> alpha);
   connect(tttCircles_2_(1..round(easeInOutCubic(t4) * strokeSampleRateEBOW)), size -> lineSizePrimary * easeOutCirc(t4), color -> sapColor.lightBlue, alpha -> alpha);
@@ -74,7 +74,6 @@ lineSampleRateEBOW = 256;
 
 
 
-startGridSize = 4.5;
 
 
 tracks = [
@@ -82,7 +81,7 @@ tracks = [
   setupAnimationTrack(3,5), // draw game
   setupAnimationTrack(6,7), // distort
   setupAnimationTrack(8,9), // fade out interior
-  setupAnimationTrack(10, 13) // question mark 
+  setupAnimationTrack(10, 11) // question mark 
 ];
 
 
@@ -99,6 +98,7 @@ innerLines(t) := [
   [rel2abs(lerp(startGridSize * startGrid_1_3, ad33, t)), rel2abs(lerp(startGridSize * startGrid_7_3, bc33, t))],
   [rel2abs(lerp(startGridSize * startGrid_1_5, ad67, t)), rel2abs(lerp(startGridSize * startGrid_7_5, bc67, t))]
 ];
+
 lineWiggles = 0.45 * [
   [random(),random()],
   [random(),random()],
@@ -162,8 +162,8 @@ drawConfusedLines(now(), tracks_5.progress);
 
 
 
-drawOutline("textBuffer", textOutlineSizePrimary, sapColor.background, easeOutCirc(tracks_5.progress));
-drawtext(rel2abs(m) + 0.5 * [-1,-1] + [0, -0.015 * textSizePrimary], "?", color -> sapColor.lightGreen, align -> "mid", size -> textSizePrimary, alpha -> easeOutCirc(tracks_5.progress));
+drawOutline("textBuffer", textOutlineSizePrimary, sapColor.background, easeInOutCubic(tracks_5.progress) - 0.000000001);
+drawtext(rel2abs(m) + 0.5 * [-1,-1] + [0, -0.015 * textSizePrimary], "?", color -> sapColor.lightGreen, align -> "mid", size -> textSizePrimary, alpha -> easeInOutCubic(tracks_5.progress));
 
 
 drawBorder(tracks_3.progress, tracks_1.progress);

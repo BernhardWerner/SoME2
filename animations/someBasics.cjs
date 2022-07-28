@@ -32,6 +32,7 @@ d = [-10, 4];
 
 startGrid = apply(-3..3, i, apply(-3..3, j, [i,j]));
 
+startGridSize = 4.5;
 
 
 computeDependentPoints();
@@ -42,8 +43,8 @@ computeDependentPoints();
 lineSizePrimary = 9;
 lineSizeSecondary = 4;
 
-pointSizePrimary = 0.5;
-pointSizeSecondary = 0.3;
+pointSizePrimary = 0.7;
+pointSizeSecondary = 0.5;
 
 markerSizePrimary = 2.5 * pointSizePrimary;
 
