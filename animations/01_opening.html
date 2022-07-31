@@ -115,7 +115,7 @@ confusedSpeeds = 2 * [
 
 createimage("textBuffer", 1920, 1080);
 canvas(canvasCorners.bl, canvasCorners.br, "textBuffer",
-  drawtext(rel2abs(m) + 0.5 * [-1,-1] + [0, -0.015 * textSizePrimary], " " + "?" + " ", align -> "mid", size -> textSizePrimary);
+  drawtext(rel2abs(m) + 0.5 * [-1,-1] + [0, -0.015 * textSizePrimary], " " + "?" + " ", align -> "mid", size -> textSizePrimary, family -> "DejaVu Sans");
 );
 
 
@@ -163,7 +163,7 @@ drawConfusedLines(now(), tracks_5.progress);
 
 
 drawOutline("textBuffer", textOutlineSizePrimary, sapColor.background, easeInOutCubic(tracks_5.progress) - 0.000000001);
-drawtext(rel2abs(m) + 0.5 * [-1,-1] + [0, -0.015 * textSizePrimary], "?", color -> sapColor.lightGreen, align -> "mid", size -> textSizePrimary, alpha -> easeInOutCubic(tracks_5.progress));
+drawtext(rel2abs(m) + 0.5 * [-1,-1] + [0, -0.015 * textSizePrimary], "?", color -> sapColor.lightGreen, align -> "mid", size -> textSizePrimary, alpha -> easeInOutCubic(tracks_5.progress), family -> "DejaVu Sans");
 
 
 drawBorder(tracks_3.progress, tracks_1.progress);

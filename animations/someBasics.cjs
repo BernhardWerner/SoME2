@@ -42,6 +42,7 @@ computeDependentPoints();
 
 lineSizePrimary = 9;
 lineSizeSecondary = 4;
+lineSizeTertiary = 2;
 
 pointSizePrimary = 0.7;
 pointSizeSecondary = 0.5;
@@ -49,9 +50,10 @@ pointSizeSecondary = 0.5;
 markerSizePrimary = 2.5 * pointSizePrimary;
 
 overshootPrimary = 0.1;
+overshootSecondary = 0.05;
 
 textOutlineSizePrimary = 0.2;
 textOutlineSizeSecondary = 0.1;
 
 textSizePrimary = 120;
-textSizeSeconary = 60;
+textSizeSecondary = 60;

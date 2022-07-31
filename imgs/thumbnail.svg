@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.51906083"
-     inkscape:cx="754.24686"
-     inkscape:cy="162.79402"
+     inkscape:zoom="0.18351572"
+     inkscape:cx="2596.5079"
+     inkscape:cy="918.17749"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -193,17 +193,6 @@
        width="901.62845"
        height="238.89301"
        id="rect1237" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1491"
-       id="radialGradient1493"
-       cx="254"
-       cy="142.875"
-       fx="254"
-       fy="142.875"
-       r="254"
-       gradientTransform="matrix(1,0,0,0.5625,0,62.507812)"
-       gradientUnits="userSpaceOnUse" />
     <rect
        x="820.71307"
        y="712.82591"
@@ -221,7 +210,53 @@
        xlink:href="#linearGradient1491"
        id="radialGradient1714"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,0.5625,1729.0202,1322.5721)"
+       gradientTransform="matrix(1,0,0,0.5625,1700.1852,1305.2711)"
+       cx="254"
+       cy="142.875"
+       fx="254"
+       fy="142.875"
+       r="254" />
+    <rect
+       x="820.71307"
+       y="712.82591"
+       width="901.62845"
+       height="238.89301"
+       id="rect1685" />
+    <rect
+       x="820.71307"
+       y="712.82591"
+       width="901.62845"
+       height="238.89301"
+       id="rect1687" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1491"
+       id="radialGradient1689"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.5625,-4.9980183e-5,62.507867)"
+       cx="254"
+       cy="142.875"
+       fx="254"
+       fy="142.875"
+       r="254" />
+    <rect
+       x="820.71307"
+       y="712.82591"
+       width="901.62845"
+       height="238.89301"
+       id="rect59430" />
+    <rect
+       x="820.71307"
+       y="712.82591"
+       width="901.62845"
+       height="238.89301"
+       id="rect59432" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1491"
+       id="radialGradient59434"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.5625,1104.3786,1658.5224)"
        cx="254"
        cy="142.875"
        fx="254"
@@ -232,109 +267,6 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="fill:url(#radialGradient1493);fill-opacity:1;stroke:none;stroke-width:0.994398;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
-       id="rect850"
-       width="508"
-       height="285.75"
-       x="2.8421709e-14"
-       y="0"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <text
-       xml:space="preserve"
-       transform="matrix(0.4781309,0,0,0.4781309,-373.49309,-139.28504)"
-       id="text1904"
-       style="font-style:normal;font-weight:normal;font-size:48px;line-height:1.25;font-family:sans-serif;text-align:start;white-space:pre;shape-inside:url(#rect1952);fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:6.27443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       x="1875.4453"
-       y="0"><tspan
-         x="820.71289"
-         y="755.29492"
-         id="tspan4575"><tspan
-           style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4573">The maths behind
-</tspan></tspan><tspan
-         x="820.71289"
-         y="815.29492"
-         id="tspan4579"><tspan
-           style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4577">perspective drawings</tspan></tspan></text>
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 50.078125,57.779496 v 88.828124 h 1.5 V 57.779496 Z"
-       id="path1906" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 79.6875,57.779496 v 88.828124 h 1.5 V 57.779496 Z"
-       id="path1908" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 21.220703,116.24824 v 1.5 h 88.826177 v -1.5 z"
-       id="path1910" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 21.220703,86.638876 v 1.5 h 88.826177 v -1.5 z"
-       id="path1912" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 19.720703,56.279496 v 1.5 90.328124 H 111.54688 V 56.279496 Z m 3,3 H 108.54688 V 145.10762 H 22.720703 Z"
-       id="path1914" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 299.11914,67.453326 a 0.75,0.75 0 0 0 -0.86914,0.60742 l -16.18945,91.179684 a 0.75,0.75 0 0 0 0.60742,0.86914 0.75,0.75 0 0 0 0.87109,-0.60742 l 16.1875,-91.179684 a 0.75,0.75 0 0 0 -0.60742,-0.86914 z"
-       id="path1926" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 319.5293,76.029496 a 0.75,0.75 0 0 0 -0.70703,0.79102 l 4.36523,77.535154 a 0.75,0.75 0 0 0 0.79102,0.70703 0.75,0.75 0 0 0 0.70703,-0.79102 l -4.36524,-77.535154 a 0.75,0.75 0 0 0 -0.79101,-0.70703 z"
-       id="path1928" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 243.03711,105.84981 a 0.75,0.75 0 0 0 -0.84375,0.64062 0.75,0.75 0 0 0 0.64062,0.8457 l 100.41993,13.67774 a 0.75,0.75 0 0 0 0.84375,-0.64063 0.75,0.75 0 0 0 -0.64063,-0.8457 z"
-       id="path1930" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 261.16211,74.633016 a 0.75,0.75 0 0 0 -0.93555,0.5 0.75,0.75 0 0 0 0.5,0.93555 l 77.7168,23.64648 a 0.75,0.75 0 0 0 0.9375,-0.5 0.75,0.75 0 0 0 -0.5,-0.93555 z"
-       id="path1932" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 473.38477,129.82832 a 0.75,0.75 0 0 0 -0.56641,0.0957 L 307.84961,233.5959 a 0.75,0.75 0 0 0 -0.23633,1.03516 0.75,0.75 0 0 0 1.0332,0.23632 L 473.61719,131.19356 a 0.75,0.75 0 0 0 0.23437,-1.03321 0.75,0.75 0 0 0 -0.46679,-0.33203 z"
-       id="path1934" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 207.73047,168.03145 a 0.75,0.75 0 0 0 -0.91797,0.5332 0.75,0.75 0 0 0 0.5332,0.91797 l 155.38086,41.07617 a 0.75,0.75 0 0 0 0.91797,-0.5332 0.75,0.75 0 0 0 -0.5332,-0.91602 z"
-       id="path1936" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 282.37891,158.7502 a 0.75,0.75 0 0 0 -0.19922,1.04101 l 47.1914,69.67188 a 0.75,0.75 0 0 0 1.04102,0.19922 0.75,0.75 0 0 0 0.20117,-1.04102 l -47.19336,-69.66992 a 0.75,0.75 0 0 0 -1.04101,-0.20117 z"
-       id="path1938" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 283.22461,158.75215 a 0.75,0.75 0 0 0 -1.04297,0.19531 0.75,0.75 0 0 0 0.19336,1.04297 l 83.32227,57.09375 a 0.75,0.75 0 0 0 1.04101,-0.19531 0.75,0.75 0 0 0 -0.19336,-1.04297 z"
-       id="path1940" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 479.35547,129.62715 -183.26172,68.91797 a 0.75,0.75 0 0 0 -0.4375,0.96484 0.75,0.75 0 0 0 0.96484,0.4375 l 183.26368,-68.91601 a 0.75,0.75 0 0 0 0.4375,-0.96485 0.75,0.75 0 0 0 -0.9668,-0.43945 z"
-       id="path1942" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 323.91406,153.56465 a 0.75,0.75 0 0 0 -0.72656,0.77344 l 2.39648,78.61328 a 0.75,0.75 0 0 0 0.77149,0.72656 0.75,0.75 0 0 0 0.72656,-0.77148 l -2.39453,-78.61524 a 0.75,0.75 0 0 0 -0.77344,-0.72656 z"
-       id="path1944" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 488.69141,132.39277 -281.24805,35.6211 a 0.75,0.75 0 0 0 -0.64844,0.83789 0.75,0.75 0 0 0 0.83789,0.65039 l 281.2461,-35.62109 a 0.75,0.75 0 0 0 0.65039,-0.83985 0.75,0.75 0 0 0 -0.83789,-0.64844 z"
-       id="path1946" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 271.89062,56.148636 a 0.75,0.75 0 0 0 -0.98046,0.40625 0.75,0.75 0 0 0 0.40625,0.98047 l 216.26757,89.556634 a 0.75,0.75 0 0 0 0.98047,-0.40625 0.75,0.75 0 0 0 -0.40625,-0.98047 z"
-       id="path1948" />
-    <path
-       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 272.17773,55.455276 a 1.50015,1.50015 0 0 0 -1.87695,0.64063 L 206.23633,168.01192 a 1.50015,1.50015 0 0 0 1.48828,2.23437 l 142.2207,-17.79102 a 1.50015,1.50015 0 0 0 1.28125,-1.79687 l -14.1875,-67.603514 a 1.50015,1.50015 0 0 0 -0.89453,-1.07812 z m 0.0703,3.27735 62.01562,25.71289 13.69336,65.236324 -137.625,17.21484 z"
-       id="path1950" />
     <image
        width="229.65834"
        height="188.91251"
@@ -344,27 +276,6 @@
        id="image4354"
        x="749.13806"
        y="-53.006012" />
-    <text
-       xml:space="preserve"
-       transform="matrix(0.4781309,0,0,0.4781309,-375.08065,-140.34339)"
-       id="text7647"
-       style="font-style:normal;font-weight:normal;font-size:48px;line-height:1.25;font-family:sans-serif;text-align:start;white-space:pre;shape-inside:url(#rect7649);fill:#ffffff;fill-opacity:1;stroke:none"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       x="1875.4453"
-       y="0"><tspan
-         x="820.71289"
-         y="755.29492"
-         id="tspan4583"><tspan
-           style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4581">The maths behind
-</tspan></tspan><tspan
-         x="820.71289"
-         y="815.29492"
-         id="tspan4587"><tspan
-           style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4585">perspective drawings</tspan></tspan></text>
     <g
        id="g1094"
        transform="translate(334.48544,-155.70874)">
@@ -452,21 +363,21 @@
            style="font-style:normal;font-weight:normal;font-size:48px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1042);fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.64699;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"><tspan
              x="820.71289"
              y="755.29492"
-             id="tspan4591"><tspan
+             id="tspan60016"><tspan
                style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-               id="tspan4589">How to draw a 
+               id="tspan60014">How to draw a 
 </tspan></tspan><tspan
              x="820.71289"
              y="815.29492"
-             id="tspan4595"><tspan
+             id="tspan60020"><tspan
                style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-               id="tspan4593">Tic-Tac-Toe grid
+               id="tspan60018">Tic-Tac-Toe grid
 </tspan></tspan><tspan
              x="820.71289"
              y="875.29492"
-             id="tspan4599"><tspan
+             id="tspan60024"><tspan
                style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-               id="tspan4597">perspectively?</tspan></tspan></text>
+               id="tspan60022">perspectively?</tspan></tspan></text>
         <path
            style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="M 106.53002,90.774403 C 224.82658,57.397307 278.75123,65.98063 304.86315,66.917913 l 20.72749,-9.517118 C 248.01221,18.62556 157.71129,54.573972 106.53002,90.774403 Z"
@@ -561,21 +472,21 @@
          inkscape:export-ydpi="96"><tspan
            x="820.71289"
            y="755.29492"
-           id="tspan4603"><tspan
+           id="tspan60028"><tspan
              style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-             id="tspan4601">How to draw a 
+             id="tspan60026">How to draw a 
 </tspan></tspan><tspan
            x="820.71289"
            y="815.29492"
-           id="tspan4607"><tspan
+           id="tspan60032"><tspan
              style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-             id="tspan4605">Tic-Tac-Toe grid
+             id="tspan60030">Tic-Tac-Toe grid
 </tspan></tspan><tspan
            x="820.71289"
            y="875.29492"
-           id="tspan4611"><tspan
+           id="tspan60036"><tspan
              style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-             id="tspan4609">perspectively?</tspan></tspan></text>
+             id="tspan60034">perspectively?</tspan></tspan></text>
       <path
          style="color:#000000;fill:#ffc335;stroke:#ffc335;stroke-width:0.802461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 898.90469,441.91419 c 106.46691,-30.03939 154.99911,-22.3144 178.49981,-21.47084 l 18.6547,-8.56541 c -69.8205,-34.89771 -151.09137,-2.54414 -197.15451,30.03625 z"
@@ -692,15 +603,15 @@
        inkscape:export-ydpi="96"><tspan
          x="820.71289"
          y="755.29492"
-         id="tspan4615"><tspan
+         id="tspan60040"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4613">How to draw a
+           id="tspan60038">How to draw a
 </tspan></tspan><tspan
          x="820.71289"
          y="815.29492"
-         id="tspan4619"><tspan
+         id="tspan60044"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4617">grid in perspective?</tspan></tspan></text>
+           id="tspan60042">grid in perspective?</tspan></tspan></text>
     <path
        style="color:#000000;fill:#ffc335;stroke:none;stroke-width:0.762239;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 1814.0535,291.60836 c 92.0967,-41.57337 139.49,-32.04619 161.0544,-27.59827 l 16.8315,-8.5654 c -63.6472,-27.32854 -139.5686,-1.82327 -177.8859,36.16367 z"
@@ -833,15 +744,15 @@
        inkscape:export-ydpi="96"><tspan
          x="820.71289"
          y="755.29492"
-         id="tspan4623"><tspan
+         id="tspan60048"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4621">How to draw a
+           id="tspan60046">How to draw a
 </tspan></tspan><tspan
          x="820.71289"
          y="815.29492"
-         id="tspan4627"><tspan
+         id="tspan60052"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4625">grid in perspective?</tspan></tspan></text>
+           id="tspan60050">grid in perspective?</tspan></tspan></text>
     <path
        style="color:#000000;fill:#ffc335;stroke:none;stroke-width:0.762239;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 1243.96,645.44401 c 92.0967,-41.57336 139.49,-32.04619 161.0543,-27.59827 l 16.8316,-8.5654 c -63.6472,-27.32854 -139.5687,-1.82327 -177.8859,36.16367 z"
@@ -867,46 +778,6 @@
            sodipodi:nodetypes="cccc" />
       </g>
     </g>
-    <path
-       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 49.24149,56.722045 V 145.54846"
-       id="path8569"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 78.850282,56.722045 V 145.54846"
-       id="path8571"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 19.632687,115.93966 H 108.45904"
-       id="path8573"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 19.632687,86.33085 H 108.45904"
-       id="path8575"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 19.632687,56.722045 V 145.54846 H 108.45904 V 56.722045 Z"
-       id="path8577"
-       sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
     <g
        id="g8595"
        style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -951,15 +822,15 @@
        y="0"><tspan
          x="1284.1309"
          y="755.29492"
-         id="tspan4631"><tspan
+         id="tspan60056"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:end;text-anchor:end"
-           id="tspan4629">The maths behind
+           id="tspan60054">The maths behind
 </tspan></tspan><tspan
          x="1197.998"
          y="815.29492"
-         id="tspan4635"><tspan
+         id="tspan60060"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:end;text-anchor:end"
-           id="tspan4633">perspective drawings</tspan></tspan></text>
+           id="tspan60058">perspective drawings</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.4781309,0,0,0.4781309,1349.1967,373.91968)"
@@ -972,15 +843,15 @@
        y="0"><tspan
          x="1284.1309"
          y="755.29492"
-         id="tspan4639"><tspan
+         id="tspan60064"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:end;text-anchor:end"
-           id="tspan4637">The maths behind
+           id="tspan60062">The maths behind
 </tspan></tspan><tspan
          x="1197.998"
          y="815.29492"
-         id="tspan4643"><tspan
+         id="tspan60068"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:end;text-anchor:end"
-           id="tspan4641">perspective drawings</tspan></tspan></text>
+           id="tspan60066">perspective drawings</tspan></tspan></text>
     <g
        id="g8720"
        transform="translate(1688.4318,543.15542)"
@@ -1116,15 +987,15 @@
        y="0"><tspan
          x="1284.1309"
          y="755.29492"
-         id="tspan4647"><tspan
+         id="tspan60072"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:end;text-anchor:end"
-           id="tspan4645">The maths behind
+           id="tspan60070">The maths behind
 </tspan></tspan><tspan
          x="1197.998"
          y="815.29492"
-         id="tspan4651"><tspan
+         id="tspan60076"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:end;text-anchor:end"
-           id="tspan4649">perspective drawings</tspan></tspan></text>
+           id="tspan60074">perspective drawings</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.4781309,0,0,0.4781309,749.42972,749.64862)"
@@ -1137,15 +1008,15 @@
        y="0"><tspan
          x="1284.1309"
          y="755.29492"
-         id="tspan4655"><tspan
+         id="tspan60080"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:end;text-anchor:end"
-           id="tspan4653">The maths behind
+           id="tspan60078">The maths behind
 </tspan></tspan><tspan
          x="1197.998"
          y="815.29492"
-         id="tspan4659"><tspan
+         id="tspan60084"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:end;text-anchor:end"
-           id="tspan4657">perspective drawings</tspan></tspan></text>
+           id="tspan60082">perspective drawings</tspan></tspan></text>
     <path
        id="path1021"
        style="color:#000000;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1259,110 +1130,6 @@
            sodipodi:nodetypes="cccc" />
       </g>
     </g>
-    <path
-       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 297.40137,67.133828 281.21226,158.31289"
-       id="path1059"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 317.9839,75.719531 4.36561,77.536549"
-       id="path1061"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 241.34827,105.53403 100.41961,13.67889"
-       id="path1063"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 259.35641,74.292118 77.71844,23.647047"
-       id="path1065"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 306.66051,233.17345 471.62983,129.50021"
-       id="path1067"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 205.95049,167.69895 155.38113,41.0765"
-       id="path1069"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 281.21226,158.31289 47.19188,69.67026"
-       id="path1071"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 281.21226,158.31289 83.32062,57.09379"
-       id="path1073"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 294.77003,198.18802 478.03239,129.27154"
-       id="path1075"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 322.34951,153.25608 2.39602,78.61433"
-       id="path1077"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#999999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 205.95049,167.69895 487.19788,132.0779"
-       id="path1083"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#999999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 270.01578,55.783263 486.28321,145.34036"
-       id="path1085"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 270.01578,55.783263 205.95049,167.69895 348.17077,149.9091 333.98254,82.304308 Z"
-       id="path1087"
-       sodipodi:nodetypes="ccccc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_08.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
     <rect
        style="fill:#1a2345;fill-opacity:0.995327;stroke:none;stroke-width:0.994398;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
        id="rect1058"
@@ -1392,15 +1159,15 @@
          y="0"><tspan
            x="820.71289"
            y="755.29492"
-           id="tspan4663"><tspan
+           id="tspan60088"><tspan
              style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-             id="tspan4661">The maths behind
+             id="tspan60086">The maths behind
 </tspan></tspan><tspan
            x="820.71289"
            y="815.29492"
-           id="tspan4667"><tspan
+           id="tspan60092"><tspan
              style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-             id="tspan4665">perspective drawings</tspan></tspan></text>
+             id="tspan60090">perspective drawings</tspan></tspan></text>
       <path
          style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 80.451172,535.06082 v 107.17187 h 2 V 535.06082 Z"
@@ -1511,15 +1278,15 @@
        y="0"><tspan
          x="820.71289"
          y="755.29492"
-         id="tspan4671"><tspan
+         id="tspan60096"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4669">The maths behind
+           id="tspan60094">The maths behind
 </tspan></tspan><tspan
          x="820.71289"
          y="815.29492"
-         id="tspan4675"><tspan
+         id="tspan60100"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4673">perspective drawings</tspan></tspan></text>
+           id="tspan60098">perspective drawings</tspan></tspan></text>
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 1781.9254,936.27125 V 1043.4443"
@@ -1717,15 +1484,15 @@
          y="0"><tspan
            x="820.71289"
            y="755.29492"
-           id="tspan4679"><tspan
+           id="tspan60104"><tspan
              style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-             id="tspan4677">The maths behind
+             id="tspan60102">The maths behind
 </tspan></tspan><tspan
            x="820.71289"
            y="815.29492"
-           id="tspan4683"><tspan
+           id="tspan60108"><tspan
              style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-             id="tspan4681">perspective drawings</tspan></tspan></text>
+             id="tspan60106">perspective drawings</tspan></tspan></text>
       <path
          style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 58.015625,56.721163 v 88.828127 h 1.5 V 56.721163 Z"
@@ -1844,15 +1611,15 @@
        y="0"><tspan
          x="820.71289"
          y="755.29492"
-         id="tspan4687"><tspan
+         id="tspan60112"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4685">The maths behind
+           id="tspan60110">The maths behind
 </tspan></tspan><tspan
          x="820.71289"
          y="815.29492"
-         id="tspan4691"><tspan
+         id="tspan60116"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4689">perspective drawings</tspan></tspan></text>
+           id="tspan60114">perspective drawings</tspan></tspan></text>
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 1159.3871,1296.6249 v 88.8264"
@@ -2034,14 +1801,14 @@
        id="rect1594"
        width="508"
        height="285.75"
-       x="1729.0203"
-       y="1260.0642"
+       x="1700.1853"
+       y="1242.7632"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
        id="g1652"
-       transform="translate(1721.0827,1261.1226)"
+       transform="translate(1692.2477,1243.8216)"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
@@ -2057,15 +1824,15 @@
          y="0"><tspan
            x="820.71289"
            y="755.29492"
-           id="tspan4695"><tspan
+           id="tspan60120"><tspan
              style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-             id="tspan4693">The maths behind
+             id="tspan60118">The maths behind
 </tspan></tspan><tspan
            x="820.71289"
            y="815.29492"
-           id="tspan4699"><tspan
+           id="tspan60124"><tspan
              style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-             id="tspan4697">perspective drawings</tspan></tspan></text>
+             id="tspan60122">perspective drawings</tspan></tspan></text>
       <path
          style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 58.015625,56.721163 v 88.828127 h 1.5 V 56.721163 Z"
@@ -2174,7 +1941,7 @@
     </g>
     <text
        xml:space="preserve"
-       transform="matrix(0.4781309,0,0,0.4781309,1353.9396,1119.7209)"
+       transform="matrix(0.4781309,0,0,0.4781309,1325.1046,1102.4199)"
        id="text1662"
        style="font-style:normal;font-weight:normal;font-size:48px;line-height:1.25;font-family:sans-serif;text-align:start;white-space:pre;shape-inside:url(#rect1712);fill:#ffffff;fill-opacity:1;stroke:none"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2184,18 +1951,18 @@
        y="0"><tspan
          x="820.71289"
          y="755.29492"
-         id="tspan4703"><tspan
+         id="tspan60128"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4701">The maths behind
+           id="tspan60126">The maths behind
 </tspan></tspan><tspan
          x="820.71289"
          y="815.29492"
-         id="tspan4707"><tspan
+         id="tspan60132"><tspan
            style="font-weight:bold;font-stretch:semi-condensed;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed'"
-           id="tspan4705">perspective drawings</tspan></tspan></text>
+           id="tspan60130">perspective drawings</tspan></tspan></text>
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1778.2617,1316.7863 v 88.8264"
+       d="m 1749.4267,1299.4853 v 88.8264"
        id="path1664"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2203,7 +1970,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1807.8705,1316.7863 v 88.8264"
+       d="m 1779.0355,1299.4853 v 88.8264"
        id="path1666"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2211,7 +1978,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1748.6529,1376.0039 h 88.8263"
+       d="m 1719.8179,1358.7029 h 88.8263"
        id="path1668"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2219,7 +1986,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1748.6529,1346.3951 h 88.8263"
+       d="m 1719.8179,1329.0941 h 88.8263"
        id="path1670"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2227,7 +1994,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1748.6529,1316.7863 v 88.8264 h 88.8263 v -88.8264 z"
+       d="m 1719.8179,1299.4853 v 88.8264 h 88.8263 v -88.8264 z"
        id="path1672"
        sodipodi:nodetypes="ccccc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2235,7 +2002,7 @@
        inkscape:export-ydpi="96" />
     <g
        id="g1682"
-       transform="matrix(0.94703721,-0.03461043,0.03279701,0.99940088,1636.9637,1300.7093)"
+       transform="matrix(0.94703721,-0.03461043,0.03279701,0.99940088,1608.1287,1283.4083)"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
@@ -2267,7 +2034,7 @@
     </g>
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 2026.4216,1327.1981 -16.1891,91.179"
+       d="m 1997.5866,1309.8971 -16.1891,91.179"
        id="path1684"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2275,7 +2042,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 2047.0041,1335.7838 4.3656,77.5365"
+       d="m 2018.1691,1318.4828 4.3656,77.5365"
        id="path1686"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2283,7 +2050,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1970.3685,1365.5983 100.4196,13.6789"
+       d="m 1941.5335,1348.2973 100.4196,13.6789"
        id="path1688"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2291,7 +2058,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1988.3766,1334.3564 77.7185,23.647"
+       d="m 1959.5416,1317.0554 77.7185,23.647"
        id="path1690"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2299,7 +2066,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 2035.6807,1493.2377 2200.65,1389.5645"
+       d="M 2006.8457,1475.9367 2171.815,1372.2635"
        id="path1692"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2307,7 +2074,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1934.9707,1427.7632 155.3811,41.0765"
+       d="m 1906.1357,1410.4622 155.3811,41.0765"
        id="path1694"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2315,7 +2082,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 2010.2325,1418.3771 47.1918,69.6703"
+       d="m 1981.3975,1401.0761 47.1918,69.6703"
        id="path1696"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2323,7 +2090,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 2010.2325,1418.3771 83.3206,57.0938"
+       d="m 1981.3975,1401.0761 83.3206,57.0938"
        id="path1698"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2331,7 +2098,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 2023.7902,1458.2523 183.2624,-68.9165"
+       d="m 1994.9552,1440.9513 183.2624,-68.9165"
        id="path1700"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2339,7 +2106,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 2051.3697,1413.3203 2.396,78.6144"
+       d="m 2022.5347,1396.0193 2.396,78.6144"
        id="path1702"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2347,7 +2114,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#999999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1934.9707,1427.7632 281.2474,-35.621"
+       d="m 1906.1357,1410.4622 281.2474,-35.621"
        id="path1704"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2355,7 +2122,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#999999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1999.036,1315.8475 216.2674,89.5571"
+       d="m 1970.201,1298.5465 216.2674,89.5571"
        id="path1706"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2363,7 +2130,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1999.036,1315.8475 -64.0653,111.9157 142.2203,-17.7898 -14.1883,-67.6048 z"
+       d="m 1970.201,1298.5465 -64.0653,111.9157 142.2203,-17.7898 -14.1883,-67.6048 z"
        id="path1708"
        sodipodi:nodetypes="ccccc"
        inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_07.png"
@@ -2380,64 +2147,843 @@
          id="g3433"
          style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
+    <rect
+       style="fill:url(#radialGradient1689);fill-opacity:1;stroke:none;stroke-width:0.994398;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       id="rect1569"
+       width="508"
+       height="285.75"
+       x="0"
+       y="0"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.4781309,0,0,0.4781309,-373.49314,-139.28457)"
+       id="text1579"
+       style="font-style:normal;font-weight:normal;font-size:41.3183px;line-height:1.25;font-family:sans-serif;text-align:start;white-space:pre;shape-inside:url(#rect1685);fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:6.27443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       x="1875.4453"
+       y="0"><tspan
+         x="820.71289"
+         y="759.82802"
+         id="tspan60146"><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60134">T</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60136">HE </tspan><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60138">M</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60140">ATHS </tspan><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60142">B</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60144">EHIND
+</tspan></tspan><tspan
+         x="820.71289"
+         y="826.23238"
+         id="tspan60156"><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60148">P</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60150">ERSPECTIVE </tspan><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60152">D</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60154">RAWINGS</tspan></tspan></text>
     <path
-       style="color:#000000;fill:#ffc335;stroke:none;stroke-width:0.762239;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 262.64462,631.84302 c 92.0967,-41.57341 139.4901,-32.04624 161.0544,-27.59832 l 16.8316,-8.5654 c -63.6472,-27.32854 -139.5687,-1.82327 -177.886,36.16372 z"
-       id="path4133"
-       sodipodi:nodetypes="cccc"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_05.png"
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 50.078075,57.77953 v 88.82813 h 1.5 V 57.77953 Z"
+       id="path1581"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 79.68745,57.77953 v 88.82813 h 1.5 V 57.77953 Z"
+       id="path1583"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 21.220653,116.24828 v 1.5 h 88.826177 v -1.5 z"
+       id="path1585"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 21.220653,86.63891 v 1.5 h 88.826177 v -1.5 z"
+       id="path1587"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.720653,56.27953 v 1.5 90.32813 H 111.54683 V 56.27953 Z m 3,3 h 85.826177 v 85.82813 H 22.720653 Z"
+       id="path1589"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
-       id="g4139"
-       style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.46402763,0,0,0.51429115,106.26774,18.169443)"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_05.png"
+       id="g1599"
+       transform="matrix(0.94703721,-0.03461043,0.03279701,0.99940088,-90.469064,41.70339)"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
+       inkscape:export-ydpi="96"
+       style="fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:3.08182;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <path
+         style="color:#000000;fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:3.08182;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 210.27342,14.944859 c 62.23646,-23.7057105 104.0406,-8.5115355 122.87111,17.64185 l 9.69678,3.568656 C 322.33406,-21.632069 253.45078,-18.109266 210.27342,14.944859 Z"
+         id="path1591"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_06.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
       <g
-         id="g4137"
-         style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
-        <path
-           style="color:#000000;fill:#ffc335;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 297.51333,32.93709 55.37092,40.200121 -67.37638,6.493874 c 13.68711,-11.176171 18.47748,-30.05018 12.00546,-46.693995 z"
-           id="path4135"
-           sodipodi:nodetypes="cccc" />
+         id="g1597"
+         style="fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:6.58898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.26586048,0.35595351,-0.39451044,0.29465852,286.13111,-88.007062)"
+         inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_06.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <g
+           id="g1595"
+           style="fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:6.58898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+          <path
+             style="color:#000000;fill:#000000;fill-opacity:0.995327;fill-rule:evenodd;stroke:#000000;stroke-width:6.58898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 272.42769,35.664329 59.77056,34.693646 -66.23803,12.88379 c 12.30101,-12.419015 14.85323,-31.644173 6.46747,-47.577436 z"
+             id="path1593"
+             sodipodi:nodetypes="cccc" />
+        </g>
       </g>
     </g>
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 301.76494,60.045022 a 0.75,0.75 0 0 0 -0.86914,0.60742 l -16.18945,91.179648 a 0.75,0.75 0 0 0 0.60742,0.86914 0.75,0.75 0 0 0 0.87109,-0.60742 l 16.1875,-91.179648 a 0.75,0.75 0 0 0 -0.60742,-0.86914 z"
+       id="path1601"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 322.1751,68.621192 a 0.75,0.75 0 0 0 -0.70703,0.79102 l 4.36523,77.535118 a 0.75,0.75 0 0 0 0.79102,0.70703 0.75,0.75 0 0 0 0.70703,-0.79102 l -4.36524,-77.535118 a 0.75,0.75 0 0 0 -0.79101,-0.70703 z"
+       id="path1603"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 245.68291,98.441479 a 0.75,0.75 0 0 0 -0.84375,0.640617 0.75,0.75 0 0 0 0.64062,0.845697 l 100.41993,13.677737 a 0.75,0.75 0 0 0 0.84375,-0.64063 0.75,0.75 0 0 0 -0.64063,-0.8457 z"
+       id="path1605"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 263.80791,67.224712 a 0.75,0.75 0 0 0 -0.93555,0.5 0.75,0.75 0 0 0 0.5,0.93555 l 77.7168,23.64648 a 0.75,0.75 0 0 0 0.9375,-0.5 0.75,0.75 0 0 0 -0.5,-0.93555 z"
+       id="path1607"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 476.03057,122.41998 a 0.75,0.75 0 0 0 -0.56641,0.0957 L 310.49541,226.18756 a 0.75,0.75 0 0 0 -0.23633,1.03516 0.75,0.75 0 0 0 1.0332,0.23632 L 476.26299,123.78522 a 0.75,0.75 0 0 0 0.23437,-1.03321 0.75,0.75 0 0 0 -0.46679,-0.33203 z"
+       id="path1609"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 210.37627,160.62311 a 0.75,0.75 0 0 0 -0.91797,0.5332 0.75,0.75 0 0 0 0.5332,0.91797 l 155.38086,41.07617 a 0.75,0.75 0 0 0 0.91797,-0.5332 0.75,0.75 0 0 0 -0.5332,-0.91602 z"
+       id="path1611"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 285.02471,151.34186 a 0.75,0.75 0 0 0 -0.19922,1.04101 l 47.1914,69.67188 a 0.75,0.75 0 0 0 1.04102,0.19922 0.75,0.75 0 0 0 0.20117,-1.04102 l -47.19336,-69.66992 a 0.75,0.75 0 0 0 -1.04101,-0.20117 z"
+       id="path1613"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 285.87041,151.34381 a 0.75,0.75 0 0 0 -1.04297,0.19531 0.75,0.75 0 0 0 0.19336,1.04297 l 83.32227,57.09375 a 0.75,0.75 0 0 0 1.04101,-0.19531 0.75,0.75 0 0 0 -0.19336,-1.04297 z"
+       id="path1615"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 482.00127,122.21881 -183.26172,68.91797 a 0.75,0.75 0 0 0 -0.4375,0.96484 0.75,0.75 0 0 0 0.96484,0.4375 l 183.26368,-68.91601 a 0.75,0.75 0 0 0 0.4375,-0.96485 0.75,0.75 0 0 0 -0.9668,-0.43945 z"
+       id="path1617"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 326.55986,146.15631 a 0.75,0.75 0 0 0 -0.72656,0.77344 l 2.39648,78.61328 a 0.75,0.75 0 0 0 0.77149,0.72656 0.75,0.75 0 0 0 0.72656,-0.77148 l -2.39453,-78.61524 a 0.75,0.75 0 0 0 -0.77344,-0.72656 z"
+       id="path1619"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 491.33721,124.98443 -281.24805,35.6211 a 0.75,0.75 0 0 0 -0.64844,0.83789 0.75,0.75 0 0 0 0.83789,0.65039 l 281.2461,-35.62109 a 0.75,0.75 0 0 0 0.65039,-0.83985 0.75,0.75 0 0 0 -0.83789,-0.64844 z"
+       id="path1621"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 274.53642,48.740332 a 0.75,0.75 0 0 0 -0.98046,0.40625 0.75,0.75 0 0 0 0.40625,0.98047 l 216.26757,89.556598 a 0.75,0.75 0 0 0 0.98047,-0.40625 0.75,0.75 0 0 0 -0.40625,-0.98047 z"
+       id="path1623"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 274.82353,48.046972 a 1.50015,1.50015 0 0 0 -1.87695,0.64063 L 208.88213,160.60358 a 1.50015,1.50015 0 0 0 1.48828,2.23437 l 142.2207,-17.79102 a 1.50015,1.50015 0 0 0 1.28125,-1.79687 l -14.1875,-67.603478 a 1.50015,1.50015 0 0 0 -0.89453,-1.07812 z m 0.0703,3.27735 62.01562,25.71289 13.69336,65.236288 -137.625,17.21484 z"
+       id="path1625"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.4781309,0,0,0.4781309,-375.08065,-140.34333)"
+       id="text1637"
+       style="font-style:normal;font-weight:normal;font-size:41.3183px;line-height:1.25;font-family:sans-serif;text-align:start;white-space:pre;shape-inside:url(#rect1687);fill:#ffffff;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       x="1875.4453"
+       y="0"><tspan
+         x="820.71289"
+         y="759.82802"
+         id="tspan60170"><tspan
+           style="font-size:53.1235px"
+           id="tspan60158">T</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60160">HE </tspan><tspan
+           style="font-size:53.1235px"
+           id="tspan60162">M</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60164">ATHS </tspan><tspan
+           style="font-size:53.1235px"
+           id="tspan60166">B</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60168">EHIND
+</tspan></tspan><tspan
+         x="820.71289"
+         y="826.23238"
+         id="tspan60180"><tspan
+           style="font-size:53.1235px"
+           id="tspan60172">P</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60174">ERSPECTIVE </tspan><tspan
+           style="font-size:53.1235px"
+           id="tspan60176">D</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60178">RAWINGS</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 49.24145,56.722067 V 145.54847"
+       id="path1639"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 78.85025,56.722067 V 145.54847"
+       id="path1641"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.63265,115.93967 h 88.8263"
+       id="path1643"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.63265,86.330867 h 88.8263"
+       id="path1645"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.63265,56.722067 v 88.826403 h 88.8263 V 56.722067 Z"
+       id="path1647"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
-       id="g4145"
-       style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.40992717,0.21744277,-0.24099619,0.45433052,207.2326,-25.51508)"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_05.png"
+       id="g1657"
+       transform="matrix(0.94703721,-0.03461043,0.03279701,0.99940088,-92.05655,40.645067)"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
+      <path
+         style="color:#000000;fill:#ffc335;stroke:none;stroke-width:0.417033;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 210.27342,14.944859 c 62.23646,-23.7057105 104.0406,-8.5115355 122.87111,17.64185 l 9.69678,3.568656 C 322.33406,-21.632069 253.45078,-18.109266 210.27342,14.944859 Z"
+         id="path1649"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_06.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
       <g
-         id="g4143"
-         style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
-        <path
-           style="color:#000000;fill:#ffc335;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 297.51333,32.93709 55.37092,40.200121 -67.37638,6.493874 c 13.68711,-11.176171 18.47748,-30.05018 12.00546,-46.693995 z"
-           id="path4141"
-           sodipodi:nodetypes="cccc" />
+         id="g1655"
+         style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.26586048,0.35595351,-0.39451044,0.29465852,286.13111,-88.007062)"
+         inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_06.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <g
+           id="g1653"
+           style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+          <path
+             style="color:#000000;fill:#ffc335;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 272.42769,35.664329 59.77056,34.693646 -66.23803,12.88379 c 12.30101,-12.419015 14.85323,-31.644173 6.46747,-47.577436 z"
+             id="path1651"
+             sodipodi:nodetypes="cccc" />
+        </g>
       </g>
     </g>
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 300.0472,59.725529 283.8581,150.90449"
+       id="path1659"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 320.6297,68.311229 4.3656,77.536461"
+       id="path1661"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 243.9941,98.125702 344.4137,111.80459"
+       id="path1663"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 262.0022,66.883829 77.7185,23.647"
+       id="path1665"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 309.3063,225.76509 474.2756,122.09189"
+       id="path1667"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 208.5963,160.29059 155.3811,41.0765"
+       id="path1669"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 283.8581,150.90449 47.1918,69.6703"
+       id="path1671"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 283.8581,150.90449 83.3206,57.0938"
+       id="path1673"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 297.4158,190.77969 183.2624,-68.9165"
+       id="path1675"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 324.9953,145.84769 2.396,78.6144"
+       id="path1677"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 208.5963,160.29059 281.2474,-35.621"
+       id="path1679"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 272.6616,48.374929 488.929,137.93199"
+       id="path1681"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 272.6616,48.374929 208.5963,160.29059 350.8166,142.50079 336.6283,74.896029 Z"
+       id="path1683"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:url(#radialGradient59434);fill-opacity:1;stroke:none;stroke-width:0.994398;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       id="rect59300"
+       width="508"
+       height="285.75"
+       x="1104.3787"
+       y="1596.0145"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.4781309,0,0,0.4781309,730.88548,1456.73)"
+       id="text59322"
+       style="font-style:normal;font-weight:normal;font-size:41.3183px;line-height:1.25;font-family:sans-serif;text-align:start;white-space:pre;shape-inside:url(#rect59430);fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:6.27443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       x="1875.4453"
+       y="0"><tspan
+         x="820.71289"
+         y="759.82802"
+         id="tspan60194"><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60182">T</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60184">HE </tspan><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60186">M</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60188">ATHS </tspan><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60190">B</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60192">EHIND
+</tspan></tspan><tspan
+         x="820.71289"
+         y="826.23238"
+         id="tspan60204"><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60196">P</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60198">ERSPECTIVE </tspan><tspan
+           style="font-weight:bold;font-size:53.1235px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60200">D</tspan><tspan
+           style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan60202">RAWINGS</tspan></tspan></text>
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1154.4567,1653.7941 v 88.8281 h 1.5 v -88.8281 z"
+       id="path59324"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1184.0661,1653.7941 v 88.8281 h 1.5 v -88.8281 z"
+       id="path59326"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1125.5993,1712.2628 v 1.5 h 88.8262 v -1.5 z"
+       id="path59328"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1125.5993,1682.6534 v 1.5 h 88.8262 v -1.5 z"
+       id="path59330"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1124.0993,1652.2941 v 1.5 90.3281 h 91.8262 v -91.8281 z m 3,3 h 85.8262 v 85.8281 h -85.8262 z"
+       id="path59332"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
-       id="g4151"
-       style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.40992717,0.21744277,-0.24099619,0.45433052,207.2326,-25.51508)"
-       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_05.png"
+       id="g59342"
+       transform="matrix(0.94703721,-0.03461043,0.03279701,0.99940088,1013.9096,1637.7179)"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
+       inkscape:export-ydpi="96"
+       style="fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:3.08182;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <path
+         style="color:#000000;fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:3.08182;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 210.27342,14.944859 c 62.23646,-23.7057105 104.0406,-8.5115355 122.87111,17.64185 l 9.69678,3.568656 C 322.33406,-21.632069 253.45078,-18.109266 210.27342,14.944859 Z"
+         id="path59334"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_06.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
       <g
-         id="g4149"
-         style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
-        <path
-           style="color:#000000;fill:#ffc335;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 297.51333,32.93709 55.37092,40.200121 -67.37638,6.493874 c 13.68711,-11.176171 18.47748,-30.05018 12.00546,-46.693995 z"
-           id="path4147"
-           sodipodi:nodetypes="cccc" />
+         id="g59340"
+         style="fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:6.58898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.26586048,0.35595351,-0.39451044,0.29465852,286.13111,-88.007062)"
+         inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_06.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <g
+           id="g59338"
+           style="fill:#000000;fill-opacity:0.995327;stroke:#000000;stroke-width:6.58898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+          <path
+             style="color:#000000;fill:#000000;fill-opacity:0.995327;fill-rule:evenodd;stroke:#000000;stroke-width:6.58898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 272.42769,35.664329 59.77056,34.693646 -66.23803,12.88379 c 12.30101,-12.419015 14.85323,-31.644173 6.46747,-47.577436 z"
+             id="path59336"
+             sodipodi:nodetypes="cccc" />
+        </g>
       </g>
     </g>
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1406.1437,1655.5299 a 0.75,0.75 0 0 0 -0.8691,0.6074 l -16.1895,91.1797 a 0.75,0.75 0 0 0 0.6074,0.8691 0.75,0.75 0 0 0 0.8711,-0.6074 l 16.1875,-91.1797 a 0.75,0.75 0 0 0 -0.6074,-0.8691 z"
+       id="path59344"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1426.5539,1664.1061 a 0.75,0.75 0 0 0 -0.7071,0.791 l 4.3653,77.5351 a 0.75,0.75 0 0 0 0.791,0.7071 0.75,0.75 0 0 0 0.707,-0.791 l -4.3652,-77.5352 a 0.75,0.75 0 0 0 -0.791,-0.707 z"
+       id="path59346"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1350.0617,1693.9264 a 0.75,0.75 0 0 0 -0.8438,0.6406 0.75,0.75 0 0 0 0.6407,0.8457 l 100.4199,13.6777 a 0.75,0.75 0 0 0 0.8437,-0.6406 0.75,0.75 0 0 0 -0.6406,-0.8457 z"
+       id="path59348"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1368.1867,1662.7096 a 0.75,0.75 0 0 0 -0.9356,0.5 0.75,0.75 0 0 0 0.5,0.9355 l 77.7168,23.6465 a 0.75,0.75 0 0 0 0.9375,-0.5 0.75,0.75 0 0 0 -0.5,-0.9355 z"
+       id="path59350"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1580.4093,1717.9049 a 0.75,0.75 0 0 0 -0.5664,0.096 l -164.9687,103.6719 a 0.75,0.75 0 0 0 -0.2363,1.0351 0.75,0.75 0 0 0 1.0332,0.2364 l 164.9707,-103.6739 a 0.75,0.75 0 0 0 0.2343,-1.0332 0.75,0.75 0 0 0 -0.4668,-0.332 z"
+       id="path59352"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1314.755,1756.108 a 0.75,0.75 0 0 0 -0.9179,0.5332 0.75,0.75 0 0 0 0.5332,0.918 l 155.3808,41.0762 a 0.75,0.75 0 0 0 0.918,-0.5332 0.75,0.75 0 0 0 -0.5332,-0.9161 z"
+       id="path59354"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1389.4035,1746.8268 a 0.75,0.75 0 0 0 -0.1992,1.041 l 47.1914,69.6719 a 0.75,0.75 0 0 0 1.041,0.1992 0.75,0.75 0 0 0 0.2012,-1.041 l -47.1934,-69.67 a 0.75,0.75 0 0 0 -1.041,-0.2011 z"
+       id="path59356"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1390.2492,1746.8287 a 0.75,0.75 0 0 0 -1.043,0.1953 0.75,0.75 0 0 0 0.1934,1.043 l 83.3222,57.0938 a 0.75,0.75 0 0 0 1.0411,-0.1954 0.75,0.75 0 0 0 -0.1934,-1.0429 z"
+       id="path59358"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1586.38,1717.7037 -183.2617,68.918 a 0.75,0.75 0 0 0 -0.4375,0.9648 0.75,0.75 0 0 0 0.9649,0.4375 l 183.2636,-68.916 a 0.75,0.75 0 0 0 0.4375,-0.9648 0.75,0.75 0 0 0 -0.9668,-0.4395 z"
+       id="path59360"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1430.9386,1741.6412 a 0.75,0.75 0 0 0 -0.7265,0.7735 l 2.3965,78.6132 a 0.75,0.75 0 0 0 0.7714,0.7266 0.75,0.75 0 0 0 0.7266,-0.7715 l -2.3945,-78.6152 a 0.75,0.75 0 0 0 -0.7735,-0.7266 z"
+       id="path59362"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1595.716,1720.4693 -281.2481,35.6211 a 0.75,0.75 0 0 0 -0.6484,0.8379 0.75,0.75 0 0 0 0.8379,0.6504 l 281.2461,-35.6211 a 0.75,0.75 0 0 0 0.6504,-0.8398 0.75,0.75 0 0 0 -0.8379,-0.6485 z"
+       id="path59364"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1378.9152,1644.2252 a 0.75,0.75 0 0 0 -0.9805,0.4063 0.75,0.75 0 0 0 0.4063,0.9804 l 216.2676,89.5567 a 0.75,0.75 0 0 0 0.9804,-0.4063 0.75,0.75 0 0 0 -0.4062,-0.9805 z"
+       id="path59366"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;fill:#000000;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1379.2023,1643.5318 a 1.50015,1.50015 0 0 0 -1.8769,0.6407 l -64.0645,111.916 a 1.50015,1.50015 0 0 0 1.4883,2.2344 l 142.2207,-17.7911 a 1.50015,1.50015 0 0 0 1.2812,-1.7968 l -14.1875,-67.6035 a 1.50015,1.50015 0 0 0 -0.8945,-1.0782 z m 0.07,3.2774 62.0156,25.7129 13.6934,65.2363 -137.625,17.2149 z"
+       id="path59368"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.4781309,0,0,0.4781309,729.29797,1455.6712)"
+       id="text59382"
+       style="font-style:normal;font-weight:normal;font-size:41.3183px;line-height:1.25;font-family:sans-serif;text-align:start;white-space:pre;shape-inside:url(#rect59432);fill:#ffffff;fill-opacity:1;stroke:none"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       x="1875.4453"
+       y="0"><tspan
+         x="820.71289"
+         y="759.82802"
+         id="tspan60218"><tspan
+           style="font-size:53.1235px"
+           id="tspan60206">T</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60208">HE </tspan><tspan
+           style="font-size:53.1235px"
+           id="tspan60210">M</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60212">ATHS </tspan><tspan
+           style="font-size:53.1235px"
+           id="tspan60214">B</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60216">EHIND
+</tspan></tspan><tspan
+         x="820.71289"
+         y="826.23238"
+         id="tspan60228"><tspan
+           style="font-size:53.1235px"
+           id="tspan60220">P</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60222">ERSPECTIVE </tspan><tspan
+           style="font-size:53.1235px"
+           id="tspan60224">D</tspan><tspan
+           style="font-weight:bold;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'"
+           id="tspan60226">RAWINGS</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1153.6201,1652.7366 v 88.8264"
+       id="path59384"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1183.2289,1652.7366 v 88.8264"
+       id="path59386"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1124.0113,1711.9542 h 88.8263"
+       id="path59388"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1124.0113,1682.3454 h 88.8263"
+       id="path59390"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1124.0113,1652.7366 v 88.8264 h 88.8263 v -88.8264 z"
+       id="path59392"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g59402"
+       transform="matrix(0.94703721,-0.03461043,0.03279701,0.99940088,1012.3221,1636.6596)"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         style="color:#000000;fill:#ffc335;stroke:none;stroke-width:0.417033;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 210.27342,14.944859 c 62.23646,-23.7057105 104.0406,-8.5115355 122.87111,17.64185 l 9.69678,3.568656 C 322.33406,-21.632069 253.45078,-18.109266 210.27342,14.944859 Z"
+         id="path59394"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_06.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <g
+         id="g59400"
+         style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(0.26586048,0.35595351,-0.39451044,0.29465852,286.13111,-88.007062)"
+         inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_06.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <g
+           id="g59398"
+           style="fill:#ffc335;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+          <path
+             style="color:#000000;fill:#ffc335;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 272.42769,35.664329 59.77056,34.693646 -66.23803,12.88379 c 12.30101,-12.419015 14.85323,-31.644173 6.46747,-47.577436 z"
+             id="path59396"
+             sodipodi:nodetypes="cccc" />
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1404.426,1655.2104 -16.1891,91.179"
+       id="path59404"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1425.0085,1663.7961 4.3656,77.5365"
+       id="path59406"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1348.3729,1693.6106 100.4196,13.6789"
+       id="path59408"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#66b9dc;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1366.381,1662.3687 77.7185,23.647"
+       id="path59410"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1413.6851,1821.25 164.9693,-103.6732"
+       id="path59412"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1312.9751,1755.7755 155.3811,41.0765"
+       id="path59414"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1388.2369,1746.3894 47.1918,69.6703"
+       id="path59416"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1388.2369,1746.3894 83.3206,57.0938"
+       id="path59418"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1401.7946,1786.2646 183.2624,-68.9165"
+       id="path59420"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#b2e75b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1429.3741,1741.3326 2.396,78.6144"
+       id="path59422"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1312.9751,1755.7755 281.2474,-35.621"
+       id="path59424"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1377.0404,1643.8598 216.2674,89.5571"
+       id="path59426"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1377.0404,1643.8598 -64.0653,111.9157 142.2203,-17.7898 -14.1883,-67.6048 z"
+       id="path59428"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\werne\Documents\GitHub\SoME2\imgs\thumbnail_09.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
 </svg>

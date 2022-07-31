@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>test</title>
+    <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/Cindy.js"></script>
+    <script type="text/javascript" src="https://cindyjs.org/dist/v0.8/CindyGL.js"></script>
+    <script type="text/javascript" src="cindyLoader.js"></script>
+
+  </head>
+
+<body style="font-family:Palatino; margin:0; font-size:16pt">
+
+
+
+<script id='csinit' type='text/x-cindyscript'>
+
+
+rel2abs(p) := canvasCenter + 0.7 * (p - m);
+
+
+
+drawExampleGrid(t) := (
+  forall(1..22,
+    ownTime = timeOffset(t, lineWiggle_#_1, 1 - lineWiggle_#_2);
+    draw([exampleGridLines_#_1, lerp(exampleGridLines_#_1, exampleGridLines_#_2, easeInOutCubic(ownTime))], color -> sapColor.lightGrey, size -> lineSizeTertiary * easeInOutCirc(ownTime));
+  );
+);
+
+drawTransformedGrid(t, s) := (
+  alpha = easeOutCirc(timeOffset(t, 0.0, 0.1));
+  t1 = timeOffset(t, 0.1, 1.0);
+
+  forall(1..22,  
+    draw(lerp(exampleGridLines_#, transformedGridLines_#, easeInOutCubic(t1)), color -> sapColor.lightGrey, size -> lineSizeTertiary, alpha -> alpha * (1 - s));
+  );
+);
+
+
+
+drawExampleLine(t, s) := (
+  t1 = timeOffset(t, 0, 0.7);
+  t2 = timeOffset(t, 0.5, 1.0);
+
+  draw([exampleLine_1, lerp(exampleLine_1, exampleLine_2, easeInOutCubic(t2))], color -> sapColor.lightBlue, size -> lineSizePrimary * easeInOutCirc(t2), alpha -> 1 - s);
+
+  if(t1 > 0,
+    forall(1..length(examplePoints),
+      ownTime = timeOffset(t1, pointWiggle_#_1, 1 - pointWiggle_#_2);
+      fillcircle(examplePoints_#, pointSizeSecondary * easeOutBack(ownTime), color -> sapColor.lightRed, alpha -> 1 - s);
+      drawcircle(examplePoints_#, pointSizeSecondary * easeOutBack(ownTime), size -> lineSizeSecondary, color -> sapColor.background, alpha -> 1 - s);
+    );
+  );
+);
+
+drawTransformedLine(t, s) := (
+  alpha = easeOutCirc(timeOffset(t, 0.0, 0.1));
+  t1 = timeOffset(t, 0.1, 1.0);
+
+  draw(lerp(exampleLine, transformedLine, easeInOutCubic(t1)), color -> sapColor.lightBlue, size -> lineSizePrimary * easeOutCirc(t1), alpha -> alpha * (1 - s));
+
+  forall(1..length(examplePoints),
+    fillcircle(lerp(examplePoints_#, transformedPoints_#, easeInOutCubic(t1)), pointSizeSecondary, color -> sapColor.lightRed, alpha -> alpha * (1 - s));
+    drawcircle(lerp(examplePoints_#, transformedPoints_#, easeInOutCubic(t1)), pointSizeSecondary, size -> lineSizeSecondary, color -> sapColor.background, alpha -> alpha * (1 - s));
+  );
+);
+
+drawBackwardsTrafo(t) := (
+  alpha = (easeOutCirc(1 - 2 * abs(t - 0.5)))^0.2;
+  t1 = 1 - timeOffset(t, 0.1, 0.9);
+
+
+  forall(1..22,  
+    draw(lerp(exampleGridLines_#, transformedGridLines_#, easeInOutCubic(t1)), color -> sapColor.lightGrey, size -> lineSizeTertiary, alpha -> alpha);
+  );
+  draw(lerp(exampleLine, transformedLine, easeInOutCubic(t1)), color -> sapColor.lightBlue, size -> lineSizePrimary * easeOutCirc(t1), alpha -> alpha);
+
+  forall(1..length(examplePoints),
+    fillcircle(lerp(examplePoints_#, transformedPoints_#, easeInOutCubic(t1)), pointSizeSecondary, color -> sapColor.lightRed, alpha -> alpha);
+    drawcircle(lerp(examplePoints_#, transformedPoints_#, easeInOutCubic(t1)), pointSizeSecondary, size -> lineSizeSecondary, color -> sapColor.background, alpha -> alpha);
+  );
+
+);
+
+
+drawProjName(t, s, mode) := (
+  crust = if(mode == 0, "", " ");
+
+  string = "Projective Transformations";
+  display = sum(string_(1..round(t * length(string))) :> crust);
+  if(t >  0,
+    drawtext([10.92, 28.6], display, size -> textSizeSecondary, bold -> true, family -> "DejaVu Sans", align -> "left", color -> (1,1,1), alpha -> 1 - s);
+  );
+);
+
+
+drawExampleCircle(t, s) := (
+  connect(exampleCircle_(1..round(easeInOutCubic(t) * strokeSampleRateEBOW)), size -> lineSizePrimary * easeOutCirc(t), color -> sapColor.lightViolet, alpha -> 1 - s);
+);
+
+drawTransformedCircle(t, s) := (
+  alpha = easeOutCirc(timeOffset(t, 0.0, 0.1));
+  connect(lerp(exampleCircle, transformedCircle, easeInOutCubic(t)), size -> lineSizePrimary, color -> sapColor.lightViolet, alpha -> alpha * (1 - s));
+);
+
+drawVanishingPoints(t, s, r) := (
+  t2 = timeOffset(t, 0.5, 1.0);
+
+  r1 = timeOffset(r, 0, 0.7);
+  r1 = easeInBack(r1);
+  if(r1 < 0, r1 = r1 / 2);
+
+
+  if(t2 > 0,
+    shiftX = 2  * (1 - r) * [2 * perlinNoise2D(1 * [now(),  now()]) - 1, 2 * perlinNoise2D(1 * [-now(),  now()]) - 1] + 0.7 * canvasWidth * [r1, 0];
+    shiftY = 2  * (1 - r) * [2 * perlinNoise2D(1 * [now(), -now()]) - 1, 2 * perlinNoise2D(1 * [-now(), -now()]) - 1] + 0.7 * canvasWidth * [0, r1];
+    fillcircle(lerp(vx, fakeVx + shiftX, easeInOutCubic(s)), pointSizeSecondary * easeOutBack(t2), color -> sapColor.lightOrange);
+    drawcircle(lerp(vx, fakeVx + shiftX, easeInOutCubic(s)), pointSizeSecondary * easeOutBack(t2), size -> lineSizeSecondary, color -> sapColor.background);
+    fillcircle(lerp(vy, fakeVy + shiftY, easeInOutCubic(s)), pointSizeSecondary * easeOutBack(t2), color -> sapColor.lightOrange);
+    drawcircle(lerp(vy, fakeVy + shiftY, easeInOutCubic(s)), pointSizeSecondary * easeOutBack(t2), size -> lineSizeSecondary, color -> sapColor.background);
+
+    drawtext(lerp(vx, fakeVx + shiftX, easeInOutCubic(s)) + [2, 0], "?", color -> sapColor.lightOrange, align -> "mid", size -> textSizeSecondary, family -> "DejaVu Sans", alpha -> easeInCirc(s));
+    drawtext(lerp(vy, fakeVy + shiftY, easeInOutCubic(s)) + [2, 0], "?", color -> sapColor.lightOrange, align -> "mid", size -> textSizeSecondary, family -> "DejaVu Sans", alpha -> easeInCirc(s));
+  );
+);
+
+drawVanishingLinesProj(t, s) := (
+  t1 = timeOffset(t, 0.0, 0.7);
+
+  if(t1 > 0,
+    forall(1..11,  
+      draw([transformedGridLines_#_2, lerp(transformedGridLines_#_2, lerp(transformedGridLines_#_2, vy, 1.15), easeInOutCubic(t1))], color -> sapColor.lightGrey, size -> lineSizeTertiary, alpha -> 1 - s);
+      draw([transformedGridLines_(# + 11)_2, lerp(transformedGridLines_(# + 11)_2, lerp(transformedGridLines_(# + 11)_2, vx, 1.15), easeInOutCubic(t1))], color -> sapColor.lightGrey, size -> lineSizeTertiary, alpha -> 1 - s);
+    );
+  );
+);
+
+
+
+drawVanishName(t, s, mode) := (
+  crust = if(mode == 0, "", " ");
+
+  string = "Vanishing Points";
+  display = sum(string_(1..round(t * length(string))) :> crust);
+  if(t >  0,
+    drawtext([7.92, 28.6], display, size -> textSizeSecondary, bold -> true, family -> "DejaVu Sans", align -> "left", color -> (1,1,1), alpha -> 1 - s);
+  );
+);
+
+
+drawInftyLine(t, s) := (
+  inftyLine = [lerp(vy, vx, -0.09), lerp(vy, vx, 1.25)];
+  draw([inftyLine_1, lerp(inftyLine_1, inftyLine_2, easeInOutCubic(t))], color -> sapColor.lightOrange, size -> lineSizeSecondary * easeInOutCirc(t), alpha -> 1 - s);
+);
+
+
+drawInftyLineName(t, s, mode) := (
+  crust = if(mode == 0, "", " ");
+
+  string = "Line at Infinity";
+  display = sum(string_(1..round(t * length(string))) :> crust);
+  if(t >  0,
+    drawtext([45.92, 25.6], display, size -> textSizeSecondary, bold -> true, family -> "DejaVu Sans", align -> "left", color -> (1,1,1), alpha -> 1 - s);
+  );
+);
+
+
+drawExtraLines(t) := (
+  t1 = timeOffset(t, 0, 0.4);
+  t2 = timeOffset(t, 0.6, 1);
+
+  if(t > 0 & t < 1,
+    forall(extraLines,
+      draw([lerp(#_1, #_2, easeInOutCubic(t2)), lerp(#_1, #_2, easeInOutCubic(t1))], color -> sapColor.lightGrey, size -> lineSizeTertiary * easeOutCirc(t1) * (1 - easeOutCirc(t2)));
+    );
+  );
+);
+
+
+
+drawEmphasis(t, s) := (
+  t1 = timeOffset(t, 0, 0.9);
+  t2 = timeOffset(t, 0.1, 1.0);
+
+  draw([emphLine_1, lerp(emphLine_1, emphLine_2, easeInOutCubic(t2))], color -> sapColor.lightBlue, size -> lineSizePrimary * easeInOutCirc(t2), alpha -> 1 - s);
+
+  if(t1 > 0,
+    forall(1..length(emphPoints),
+      ownTime = timeOffset(t1, pointWiggle_#_1, 1 - pointWiggle_#_2);
+      fillcircle(emphPoints_#, pointSizeSecondary * easeOutBack(ownTime), color -> sapColor.lightRed, alpha -> 1 - s);
+      drawcircle(emphPoints_#, pointSizeSecondary * easeOutBack(ownTime), size -> lineSizeSecondary, color -> sapColor.background, alpha -> 1 - s);
+    );
+  );
+);
+
+
+
+
+
+drawVanishingLinesEucl(t) := (
+  if(t > 0,
+    forall(1..11,  
+      draw([exampleGridLines_#_2, lerp(exampleGridLines_#_2, lerp(exampleGridLines_#_2, exampleGridLines_#_2 + [0, 0.6 * canvasWidth], 1.15), easeInOutCubic(t))], color -> sapColor.lightGrey, size -> lineSizeTertiary);
+      draw([exampleGridLines_(# + 11)_2, lerp(exampleGridLines_(# + 11)_2, lerp(exampleGridLines_(# + 11)_2, exampleGridLines_(# + 11)_2 + [0.6 * canvasWidth, 0], 1.15), easeInOutCubic(t))], color -> sapColor.lightGrey, size -> lineSizeTertiary);
+    );
+
+    draw([exampleGrid_11_11 + offsetA + [3, 5], exampleGrid_11_11 + offsetA + [3, 5] + [0, 4 * easeinOutCubic(t)]], size -> lineSizeSecondary * easeInCirc(t), color -> sapColor.lightOrange);
+    connect(arrowTip(exampleGrid_11_11 + offsetA + [3, 5] + [0, 4 * easeinOutCubic(t)], [0,1], 0.5), size -> lineSizeSecondary * easeInCirc(t), color -> sapColor.lightOrange);
+    drawtext(exampleGrid_11_11 + offsetA + [3, 5] + [0, 4 * easeinOutCubic(t)] + [0, 1], "$\infty$", color -> sapColor.lightOrange, align -> "mid", size -> textSizeSecondary, family -> "DejaVu Sans", alpha -> easeInCirc(t));
+
+    draw([exampleGrid_11_11 + offsetA + [5, 3], exampleGrid_11_11 + offsetA + [5, 3] + [4 * easeinOutCubic(t), 0]], size -> lineSizeSecondary * easeInCirc(t), color -> sapColor.lightOrange);
+    connect(arrowTip(exampleGrid_11_11 + offsetA + [5, 3] + [4 * easeinOutCubic(t), 0], [1, 0], 0.5), size -> lineSizeSecondary * easeInCirc(t), color -> sapColor.lightOrange);
+    drawtext(exampleGrid_11_11 + offsetA + [5, 3] + [4 * easeinOutCubic(t), 0] + [2, -0.0075 * textSizeSecondary], "$\infty$", color -> sapColor.lightOrange, align -> "mid", size -> textSizeSecondary, family -> "DejaVu Sans", alpha -> easeInCirc(t));
+  );
+);
+
+
+
+// *************************************************************************
+
+strokeSampleRateEBOW = 256;
+lineSampleRateEBOW = 256;
+
+fpsBuffer = [0,0,0,0,0];
+
+tracks = [
+  setupAnimationTrack(1,2),      // 01: draw grid
+  setupAnimationTrack(3,5),      // 02: transform forwards
+  setupAnimationTrack(6,7),      // 03: mark line
+  setupAnimationTrack(8,10),     // 04: transform Line
+  setupAnimationTrack(11,13),    // 05: transform backwards
+  setupAnimationTrack(14,15),    // 06: show name
+  setupAnimationTrack(16,17),    // 07: fade out example line
+  setupAnimationTrack(18,19),    // 08: draw circle
+  setupAnimationTrack(20,22),    // 09: transform circle
+  setupAnimationTrack(23,24),    // 10: fade out circles
+  setupAnimationTrack(25,26),    // 11: show vanishing points (plus name)
+  setupAnimationTrack(27,28),    // 12: line at infinity
+  setupAnimationTrack(29,31),    // 13: more bundles of parallel lines
+  setupAnimationTrack(32,34),    // 14: mark vanishing point and others on a line
+  setupAnimationTrack(35,37),    // 15: transform vanishing point back wrong
+  setupAnimationTrack(40,42)    // 16: move vanishing point towards infinity
+];
+
+
+
+trafo = [[-0.15,0.07,0.1],[-0.06,-0.22,-1],[-0.03,-0.03,-0.4]];
+
+
+
+exampleGrid = apply(-5..5, i, apply(-5..5, j, [i,j]));
+transformedGrid = 3.2 * apply(exampleGrid, row, apply(row, (trafo * (# :> 1)).xy ));
+
+exampleGrid = 2 * exampleGrid;
+
+
+offsetA = canvasCenter + [-23, 0];
+offsetB = canvasCenter + [ 15, -4.5];
+
+exampleGridLines = apply(1..11, i, segment(exampleGrid_i_1 + offsetA, exampleGrid_i_11 + offsetA, overshootSecondary)) ++ apply(1..11, j, segment(exampleGrid_1_j + offsetA, exampleGrid_11_j + offsetA, overshootSecondary));
+transformedGridLines = apply(1..11, i, segment(transformedGrid_i_1 + offsetB, transformedGrid_i_11 + offsetB, overshootSecondary)) ++ apply(1..11, j, segment(transformedGrid_1_j + offsetB, transformedGrid_11_j + offsetB, overshootSecondary));
+
+lineWiggle = 0.3 * apply(1..22,
+  [random(), random()];
+);
+
+
+
+examplePoints = apply([exampleGrid_1_7,exampleGrid_3_6,exampleGrid_5_5,exampleGrid_7_4,exampleGrid_9_3,exampleGrid_11_2], # + offsetA);
+exampleLine = segment(examplePoints_1, examplePoints_(-1), overshootPrimary);
+pointWiggle = apply(1..20, 0.3 * [random(), random()]);
+
+transformedPoints = apply([transformedGrid_1_7,transformedGrid_3_6,transformedGrid_5_5,transformedGrid_7_4,transformedGrid_9_3,transformedGrid_11_2], # + offsetB);
+transformedLine = segment(transformedPoints_1, transformedPoints_(-1), overshootPrimary);
+
+
+
+
+exampleCircle = sampleCircle(5, 2 * pi);
+transformedCircle = apply(exampleCircle, (trafo * (# :> 1)).xy );
+
+exampleCircle = apply(exampleCircle, 2 * # + offsetA);
+transformedCircle = apply(transformedCircle, 3.2 * # + offsetB);
+
+
+vx = (trafo * [1,0,0]).xy * 3.2 + offsetB;
+vy = (trafo * [0,1,0]).xy * 3.2 + offsetB;
+v3 = (trafo * [1,1,0]).xy * 3.2 + offsetB;
+
+fakeVx = offsetA + [16, 0];
+fakeVy = offsetA + [0, 16];
+
+
+extraLines = [
+  //segment(exampleGrid_1_1  + offsetA, exampleGrid_11_11 + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_1_2  + offsetA, exampleGrid_10_11 + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_1_3  + offsetA, exampleGrid_9_11  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_1_4  + offsetA, exampleGrid_8_11  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_1_5  + offsetA, exampleGrid_7_11  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_1_6  + offsetA, exampleGrid_6_11  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_1_7  + offsetA, exampleGrid_5_11  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_1_8  + offsetA, exampleGrid_4_11  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_1_9  + offsetA, exampleGrid_3_11  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_1_10 + offsetA, exampleGrid_2_11  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_2_1  + offsetA, exampleGrid_11_10 + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_3_1  + offsetA, exampleGrid_11_9  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_4_1  + offsetA, exampleGrid_11_8  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_5_1  + offsetA, exampleGrid_11_7  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_6_1  + offsetA, exampleGrid_11_6  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_7_1  + offsetA, exampleGrid_11_5  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_8_1  + offsetA, exampleGrid_11_4  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_9_1  + offsetA, exampleGrid_11_3  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  //segment(exampleGrid_10_1 + offsetA, exampleGrid_11_2  + offsetA, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_1  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_2  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_3  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_4  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_5  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_6  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_7  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_8  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_9  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_1_10 + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_2_1  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_3_1  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_4_1  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_5_1  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_6_1  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_7_1  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_8_1  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_9_1  + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1)),
+  segment(transformedGrid_10_1 + offsetB, v3, overshootSecondary + 0.01 * (2 * random() - 1))
+];
+
+
+
+emphPoints = apply(apply(1..11, transformedGrid_1_(12 - #)), # + offsetB);
+emphLine = segment(vy, transformedGrid_1_1 + offsetB, overshootPrimary);
+
+
+
+
+
+
+
+
+createimage("textBuffer", 1920, 1080);
+
+
+
+
+setupTime();
+playanimation();
+</script>
+
+
+
+<script id='csdraw' type='text/x-cindyscript'>
+fillRect(canvasRect, sapColor.background, 1);
+
+drawVanishingLinesEucl(tracks_16.progress);
+
+drawExampleGrid(tracks_1.progress);
+drawTransformedGrid(tracks_2.progress, tracks_15.progress);
+
+if(tracks_10.progress < 1,
+  drawExampleLine(tracks_3.progress, tracks_7.progress);
+  drawTransformedLine(tracks_4.progress, tracks_7.progress);
+  drawBackwardsTrafo(tracks_5.progress);
+
+  drawExampleCircle(tracks_8.progress, tracks_10.progress);
+  drawTransformedCircle(tracks_9.progress, tracks_10.progress);
+);
+
+drawVanishingLinesProj(tracks_11.progress, tracks_15.progress);
+
+drawEmphasis(tracks_14.progress, tracks_15.progress);
+
+
+drawInftyLine(tracks_12.progress, tracks_15.progress);
+
+drawVanishingPoints(tracks_11.progress, tracks_15.progress, tracks_16.progress);
+
+drawExtraLines(tracks_13.progress);
+
+
+
+
+
+
+
+/*
+if(tracks_10.progress < 1,
+  clearimage("textBuffer");
+  canvas(canvasCorners.bl, canvasCorners.br, "textBuffer",
+    drawProjName(tracks_6.progress, tracks_10.progress, 0);
+  );
+);
+
+if(tracks_12.progress < 1,
+  clearimage("textBuffer");
+  canvas(canvasCorners.bl, canvasCorners.br, "textBuffer",
+    drawVanishName(tracks_11.progress, 0);
+    drawInftyLineName(tracks_12.progress, 0);
+  );
+);
+
+drawOutline("textBuffer", textOutlineSizePrimary, sapColor.background, 1);
+*/
+drawProjName(tracks_6.progress, tracks_10.progress, 1);
+drawVanishName(tracks_11.progress, tracks_15.progress, 1);
+drawInftyLineName(tracks_12.progress, tracks_15.progress, 1);
+
+
+
+
+//DEBUGGING
+drawtext(canvasCorners.tl + [1, -1.5], format(now(),2), size -> 25, color -> (1,1,1));
+drawtext(canvasCorners.tl + [1, -3], round(sum(fpsBuffer) / length(fpsBuffer)), size -> 25, color -> (1,1,1));
+</script>
+
+
+
+<script id='cstick' type='text/x-cindyscript'>
+delta = deltaTime();
+fpsBuffer = fpsBuffer :> 1 / delta;
+if(length(fpsBuffer) > 30, fpsBuffer = bite(fpsBuffer));
+
+forall(tracks, updateAnimationTrack(#, delta));
+
+
+
+
+</script>
+
+
+<script id='csmousemove' type='text/x-cindyscript'>
+
+//println(mouse().xy);
+</script>
+
+<script id='csmousedown' type='text/x-cindyscript'>
+</script>
+
+<script id='csmousedrag' type='text/x-cindyscript'>
+</script>
+
+<script id='csmouseup' type='text/x-cindyscript'>
+</script>
+
+<!-- <script id='cskeydown' type='text/x-cindyscript'>
+</script> -->
+
+
+<canvas id="CSCanvas" align="left" valign="top" width="1920" height="1080" style="border:0px solid #000000;"></canvas>
+
+
+
+
+
+
+<script>
+
+fetch("egdod.cjs")
+  .then(response => response.text())
+  .then(data => {
+    loadCindyScript(data);
+    fetch("someBasics.cjs")
+    .then(response => response.text())
+    .then(data => {
+      loadCindyScript(data);
+      cindy = createCindy({canvasname:"CSCanvas",
+        scripts:"cs*",
+        images: {
+        },
+        use:["katex", "CindyGL"]
+      });
+    });
+  });
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+  
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
